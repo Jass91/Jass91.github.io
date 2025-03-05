@@ -24384,7 +24384,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵparseCookieValue": () => (/* binding */ parseCookieValue),
 /* harmony export */   "ɵsetRootDomAdapter": () => (/* binding */ setRootDomAdapter)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7580);
 
 /**
@@ -32028,7 +32028,7 @@ function assetPriorityCountBelowThreshold(_x) {
  * This assert function is meant to only run on the browser.
  */
 function _assetPriorityCountBelowThreshold() {
-  _assetPriorityCountBelowThreshold = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (appRef) {
+  _assetPriorityCountBelowThreshold = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (appRef) {
     if (IMGS_WITH_PRIORITY_ATTR_COUNT === 0) {
       IMGS_WITH_PRIORITY_ATTR_COUNT++;
       yield (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵwhenStable"])(appRef);
@@ -32155,7 +32155,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵREQUESTS_CONTRIBUTE_TO_STABILITY": () => (/* binding */ REQUESTS_CONTRIBUTE_TO_STABILITY),
 /* harmony export */   "ɵwithHttpTransferCache": () => (/* binding */ withHttpTransferCache)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 9452);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 3942);
@@ -33689,7 +33689,7 @@ class FetchBackend {
   }
   doRequest(request, signal, observer) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const init = _this.createRequestInit(request);
       let response;
       try {
@@ -33746,7 +33746,7 @@ class FetchBackend {
         // Perform response processing outside of Angular zone to
         // ensure no excessive change detection runs are executed
         // Here calling the async ReadableStreamDefaultReader.read() is responsible for triggering CD
-        yield _this.ngZone.runOutsideAngular( /*#__PURE__*/(0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        yield _this.ngZone.runOutsideAngular( /*#__PURE__*/(0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           while (true) {
             const {
               done,
@@ -113999,7 +113999,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   ParamType: () => (/* binding */ ParamType),
 /* harmony export */   StructFragment: () => (/* binding */ StructFragment)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/index.js */ 1079);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ 2333);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/index.js */ 5519);
@@ -114603,7 +114603,7 @@ class ParamType {
     }
     const result = process(this.type, value);
     if (result.then) {
-      promises.push((0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      promises.push((0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         setValue(yield result);
       })());
     } else {
@@ -114619,7 +114619,7 @@ class ParamType {
    */
   walkAsync(value, process) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const promises = [];
       const result = [value];
       _this2.#walkAsync(promises, value, process, value => {
@@ -117517,7 +117517,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   isAddressable: () => (/* binding */ isAddressable),
 /* harmony export */   resolveAddress: () => (/* binding */ resolveAddress)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ 2333);
 /* harmony import */ var _address_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./address.js */ 997);
 
@@ -117613,7 +117613,7 @@ function checkAddress(_x, _x2) {
  *    //_error:
  */
 function _checkAddress() {
-  _checkAddress = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (target, promise) {
+  _checkAddress = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (target, promise) {
     const result = yield promise;
     if (result == null || result === "0x0000000000000000000000000000000000000000") {
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__.assert)(typeof target !== "string", "unconfigured name", "UNCONFIGURED_NAME", {
@@ -117781,7 +117781,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   copyOverrides: () => (/* binding */ copyOverrides),
 /* harmony export */   resolveArgs: () => (/* binding */ resolveArgs)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _abi_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../abi/index.js */ 5955);
 /* harmony import */ var _abi_index_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../abi/index.js */ 5984);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../address/index.js */ 6744);
@@ -117836,7 +117836,7 @@ class PreparedTopicFilter {
     // Recursively descend into args and resolve any addresses
     const runner = getRunner(contract.runner, "resolveName");
     const resolver = canResolve(runner) ? runner : null;
-    this.#filter = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    this.#filter = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const resolvedArgs = yield Promise.all(fragment.inputs.map((param, index) => {
         const arg = args[index];
         if (arg == null) {
@@ -117893,7 +117893,7 @@ function copyOverrides(_x, _x2) {
  *  @_ignore:
  */
 function _copyOverrides() {
-  _copyOverrides = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (arg, allowed) {
+  _copyOverrides = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (arg, allowed) {
     // Make sure the overrides passed in are a valid overrides object
     const _overrides = _abi_index_js__WEBPACK_IMPORTED_MODULE_3__.Typed.dereference(arg, "overrides");
     (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assertArgument)(typeof _overrides === "object", "invalid overrides parameter", "overrides", arg);
@@ -117913,7 +117913,7 @@ function resolveArgs(_x3, _x4, _x5) {
   return _resolveArgs.apply(this, arguments);
 }
 function _resolveArgs() {
-  _resolveArgs = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (_runner, inputs, args) {
+  _resolveArgs = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (_runner, inputs, args) {
     // Recursively descend into args and resolve any addresses
     const runner = getRunner(_runner, "resolveName");
     const resolver = canResolve(runner) ? runner : null;
@@ -117931,7 +117931,7 @@ function _resolveArgs() {
 }
 function buildWrappedFallback(contract) {
   const populateTransaction = /*#__PURE__*/function () {
-    var _ref2 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
+    var _ref2 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
       // If an overrides was passed in, copy it and normalize the values
       const tx = yield copyOverrides(overrides, ["data"]);
       tx.to = yield contract.getAddress();
@@ -117957,7 +117957,7 @@ function buildWrappedFallback(contract) {
     };
   }();
   const staticCall = /*#__PURE__*/function () {
-    var _ref3 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
+    var _ref3 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
       const runner = getRunner(contract.runner, "call");
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(canCall(runner), "contract runner does not support calling", "UNSUPPORTED_OPERATION", {
         operation: "call"
@@ -117977,7 +117977,7 @@ function buildWrappedFallback(contract) {
     };
   }();
   const send = /*#__PURE__*/function () {
-    var _ref4 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
+    var _ref4 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
       const runner = contract.runner;
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(canSend(runner), "contract runner does not support sending transactions", "UNSUPPORTED_OPERATION", {
         operation: "sendTransaction"
@@ -117993,7 +117993,7 @@ function buildWrappedFallback(contract) {
     };
   }();
   const estimateGas = /*#__PURE__*/function () {
-    var _ref5 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
+    var _ref5 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
       const runner = getRunner(contract.runner, "estimateGas");
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(canEstimate(runner), "contract runner does not support gas estimation", "UNSUPPORTED_OPERATION", {
         operation: "estimateGas"
@@ -118005,7 +118005,7 @@ function buildWrappedFallback(contract) {
     };
   }();
   const method = /*#__PURE__*/function () {
-    var _ref6 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
+    var _ref6 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (overrides) {
       return yield send(overrides);
     });
     return function method(_x10) {
@@ -118034,7 +118034,7 @@ function buildWrappedMethod(contract, key) {
     return fragment;
   };
   const populateTransaction = /*#__PURE__*/function () {
-    var _ref7 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+    var _ref7 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
       const fragment = getFragment(...args);
       // If an overrides was passed in, copy it and normalize the values
       let overrides = {};
@@ -118058,7 +118058,7 @@ function buildWrappedMethod(contract, key) {
     };
   }();
   const staticCall = /*#__PURE__*/function () {
-    var _ref8 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+    var _ref8 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
       const result = yield staticCallResult(...args);
       if (result.length === 1) {
         return result[0];
@@ -118070,7 +118070,7 @@ function buildWrappedMethod(contract, key) {
     };
   }();
   const send = /*#__PURE__*/function () {
-    var _ref9 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+    var _ref9 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
       const runner = contract.runner;
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(canSend(runner), "contract runner does not support sending transactions", "UNSUPPORTED_OPERATION", {
         operation: "sendTransaction"
@@ -118086,7 +118086,7 @@ function buildWrappedMethod(contract, key) {
     };
   }();
   const estimateGas = /*#__PURE__*/function () {
-    var _ref10 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+    var _ref10 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
       const runner = getRunner(contract.runner, "estimateGas");
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(canEstimate(runner), "contract runner does not support gas estimation", "UNSUPPORTED_OPERATION", {
         operation: "estimateGas"
@@ -118098,7 +118098,7 @@ function buildWrappedMethod(contract, key) {
     };
   }();
   const staticCallResult = /*#__PURE__*/function () {
-    var _ref11 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+    var _ref11 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
       const runner = getRunner(contract.runner, "call");
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(canCall(runner), "contract runner does not support calling", "UNSUPPORTED_OPERATION", {
         operation: "call"
@@ -118121,7 +118121,7 @@ function buildWrappedMethod(contract, key) {
     };
   }();
   const method = /*#__PURE__*/function () {
-    var _ref12 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
+    var _ref12 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (...args) {
       const fragment = getFragment(...args);
       if (fragment.constant) {
         return yield staticCall(...args);
@@ -118217,7 +118217,7 @@ function getSubInfo(_x11, _x12) {
   return _getSubInfo.apply(this, arguments);
 }
 function _getSubInfo() {
-  _getSubInfo = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event) {
+  _getSubInfo = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event) {
     let topics;
     let fragment = null;
     // Convert named events to topicHash and get the fragment for
@@ -118299,7 +118299,7 @@ function hasSub(_x13, _x14) {
   return _hasSub.apply(this, arguments);
 }
 function _hasSub() {
-  _hasSub = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event) {
+  _hasSub = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event) {
     const {
       subs
     } = getInternal(contract);
@@ -118313,7 +118313,7 @@ function getSub(_x15, _x16, _x17) {
 // ensure correct ordering (note this cannot throw and just adds the
 // notice to the event queu using setTimeout).
 function _getSub() {
-  _getSub = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, operation, event) {
+  _getSub = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, operation, event) {
     // Make sure our runner can actually subscribe to events
     const provider = getProvider(contract.runner);
     (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(provider, "contract runner does not support subscribing", "UNSUPPORTED_OPERATION", {
@@ -118363,7 +118363,7 @@ function _getSub() {
         starting.push(provider.on(filter, listener));
       };
       const stop = /*#__PURE__*/function () {
-        var _ref14 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        var _ref14 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           if (starting.length == 0) {
             return;
           }
@@ -118393,7 +118393,7 @@ function _emit(_x18, _x19, _x20, _x21) {
   return _emit2.apply(this, arguments);
 }
 function _emit2() {
-  _emit2 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event, args, payloadFunc) {
+  _emit2 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event, args, payloadFunc) {
     yield lastEmit;
     const sub = yield hasSub(contract, event);
     if (!sub) {
@@ -118425,7 +118425,7 @@ function emit(_x22, _x23, _x24, _x25) {
   return _emit3.apply(this, arguments);
 }
 function _emit3() {
-  _emit3 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event, args, payloadFunc) {
+  _emit3 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (contract, event, args, payloadFunc) {
     try {
       yield lastEmit;
     } catch (error) {}
@@ -118609,7 +118609,7 @@ class BaseContract {
    */
   getAddress() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield getInternal(_this).addrPromise;
     })();
   }
@@ -118618,7 +118618,7 @@ class BaseContract {
    */
   getDeployedCode() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const provider = getProvider(_this2.runner);
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(provider, "runner does not support .provider", "UNSUPPORTED_OPERATION", {
         operation: "getDeployedCode"
@@ -118636,7 +118636,7 @@ class BaseContract {
    */
   waitForDeployment() {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // We have the deployement transaction; just use that (throws if deployement fails)
       const deployTx = _this3.deploymentTransaction();
       if (deployTx) {
@@ -118655,7 +118655,7 @@ class BaseContract {
       });
       return new Promise((resolve, reject) => {
         const _checkCode = /*#__PURE__*/function () {
-          var _ref13 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          var _ref13 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             try {
               const code = yield _this3.getDeployedCode();
               if (code != null) {
@@ -118710,7 +118710,7 @@ class BaseContract {
    *  @_ignore:
    */
   queryTransaction(hash) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       throw new Error("@TODO");
     })();
   }
@@ -118734,7 +118734,7 @@ class BaseContract {
    */
   queryFilter(event, fromBlock, toBlock) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (fromBlock == null) {
         fromBlock = 0;
       }
@@ -118783,7 +118783,7 @@ class BaseContract {
    */
   on(event, listener) {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const sub = yield getSub(_this5, "on", event);
       sub.listeners.push({
         listener,
@@ -118799,7 +118799,7 @@ class BaseContract {
    */
   once(event, listener) {
     var _this6 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const sub = yield getSub(_this6, "once", event);
       sub.listeners.push({
         listener,
@@ -118816,7 +118816,7 @@ class BaseContract {
    */
   emit(event, ...args) {
     var _this7 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield emit(_this7, event, args, null);
     })();
   }
@@ -118826,7 +118826,7 @@ class BaseContract {
    */
   listenerCount(event) {
     var _this8 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (event) {
         const sub = yield hasSub(_this8, event);
         if (!sub) {
@@ -118852,7 +118852,7 @@ class BaseContract {
    */
   listeners(event) {
     var _this9 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (event) {
         const sub = yield hasSub(_this9, event);
         if (!sub) {
@@ -118882,7 +118882,7 @@ class BaseContract {
    */
   off(event, listener) {
     var _this10 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const sub = yield hasSub(_this10, event);
       if (!sub) {
         return _this10;
@@ -118908,7 +118908,7 @@ class BaseContract {
    */
   removeAllListeners(event) {
     var _this11 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (event) {
         const sub = yield hasSub(_this11, event);
         if (!sub) {
@@ -118936,7 +118936,7 @@ class BaseContract {
    */
   addListener(event, listener) {
     var _this12 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this12.on(event, listener);
     })();
   }
@@ -118945,7 +118945,7 @@ class BaseContract {
    */
   removeListener(event, listener) {
     var _this13 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this13.off(event, listener);
     })();
   }
@@ -118996,7 +118996,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   EventLog: () => (/* binding */ EventLog),
 /* harmony export */   UndecodedEventLog: () => (/* binding */ UndecodedEventLog)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _providers_provider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../providers/provider.js */ 9938);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ 5519);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/index.js */ 4055);
@@ -119120,7 +119120,7 @@ class ContractTransactionResponse extends _providers_provider_js__WEBPACK_IMPORT
   wait(confirms, timeout) {
     var _superprop_getWait = () => super.wait,
       _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const receipt = yield _superprop_getWait().call(_this, confirms, timeout);
       if (receipt == null) {
         return null;
@@ -119152,7 +119152,7 @@ class ContractUnknownEventPayload extends _utils_index_js__WEBPACK_IMPORTED_MODU
    */
   getBlock() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this2.log.getBlock();
     })();
   }
@@ -119161,7 +119161,7 @@ class ContractUnknownEventPayload extends _utils_index_js__WEBPACK_IMPORTED_MODU
    */
   getTransaction() {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this3.log.getTransaction();
     })();
   }
@@ -119170,7 +119170,7 @@ class ContractUnknownEventPayload extends _utils_index_js__WEBPACK_IMPORTED_MODU
    */
   getTransactionReceipt() {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this4.log.getTransactionReceipt();
     })();
   }
@@ -120112,7 +120112,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   TypedDataEncoder: () => (/* binding */ TypedDataEncoder),
 /* harmony export */   verifyTypedData: () => (/* binding */ verifyTypedData)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../address/index.js */ 997);
 /* harmony import */ var _crypto_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../crypto/index.js */ 9562);
 /* harmony import */ var _transaction_index_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../transaction/index.js */ 6353);
@@ -120565,7 +120565,7 @@ class TypedDataEncoder {
    * %%types%% and the %%domain%%.
    */
   static resolveNames(domain, types, value, resolveName) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // Make a copy to isolate it from the object passed in
       domain = Object.assign({}, domain);
       // Allow passing null to ignore value
@@ -120686,7 +120686,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AbstractProvider: () => (/* binding */ AbstractProvider),
 /* harmony export */   UnmanagedSubscriber: () => (/* binding */ UnmanagedSubscriber)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../address/index.js */ 6744);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../address/index.js */ 997);
 /* harmony import */ var _constants_index_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../constants/index.js */ 2692);
@@ -120795,7 +120795,7 @@ function getSubscription(_x, _x2) {
   return _getSubscription.apply(this, arguments);
 }
 function _getSubscription() {
-  _getSubscription = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (_event, provider) {
+  _getSubscription = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (_event, provider) {
     if (_event == null) {
       throw new Error("invalid event");
     }
@@ -120861,7 +120861,7 @@ function _getSubscription() {
           if ((0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__.isHexString)(addr)) {
             addresses.push(addr);
           } else {
-            promises.push((0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+            promises.push((0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
               addresses.push(yield (0,_address_index_js__WEBPACK_IMPORTED_MODULE_3__.resolveAddress)(addr, provider));
             })());
           }
@@ -120990,7 +120990,7 @@ class AbstractProvider {
   // Shares multiple identical requests made during the same 250ms
   #perform(req) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const timeout = _this.#options.cacheTimeout;
       // Caching disabled
       if (timeout < 0) {
@@ -121016,7 +121016,7 @@ class AbstractProvider {
    */
   ccipReadFetch(tx, calldata, urls) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this2.disableCcipRead || urls.length === 0 || tx.to == null) {
         return null;
       }
@@ -121155,7 +121155,7 @@ class AbstractProvider {
    *  Sub-classes **must** override this.
    */
   _perform(req) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(false, `unsupported method: ${req.method}`, "UNSUPPORTED_OPERATION", {
         operation: req.method,
         info: req
@@ -121165,7 +121165,7 @@ class AbstractProvider {
   // State
   getBlockNumber() {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const blockNumber = (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_9__.getNumber)(yield _this3.#perform({
         method: "getBlockNumber"
       }), "%response");
@@ -121312,7 +121312,7 @@ class AbstractProvider {
       }
       const addr = (0,_address_index_js__WEBPACK_IMPORTED_MODULE_3__.resolveAddress)(request[key], this);
       if (isPromise(addr)) {
-        promises.push((0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        promises.push((0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           request[key] = yield addr;
         })());
       } else {
@@ -121322,7 +121322,7 @@ class AbstractProvider {
     if (request.blockTag != null) {
       const blockTag = this._getBlockTag(request.blockTag);
       if (isPromise(blockTag)) {
-        promises.push((0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        promises.push((0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           request.blockTag = yield blockTag;
         })());
       } else {
@@ -121330,7 +121330,7 @@ class AbstractProvider {
       }
     }
     if (promises.length) {
-      return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         yield Promise.all(promises);
         return request;
       })();
@@ -121339,11 +121339,11 @@ class AbstractProvider {
   }
   getNetwork() {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // No explicit network was set and this is our first time
       if (_this4.#networkPromise == null) {
         // Detect the current network (shared with all calls)
-        const detectNetwork = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        const detectNetwork = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           try {
             const network = yield _this4._detectNetwork();
             _this4.emit("network", network, null);
@@ -121381,17 +121381,17 @@ class AbstractProvider {
   }
   getFeeData() {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const network = yield _this5.getNetwork();
       const getFeeDataFunc = /*#__PURE__*/function () {
-        var _ref5 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        var _ref5 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           const {
             _block,
             gasPrice,
             priorityFee
           } = yield (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_1__.resolveProperties)({
             _block: _this5.#getBlock("latest", false),
-            gasPrice: (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+            gasPrice: (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
               try {
                 const value = yield _this5.#perform({
                   method: "getGasPrice"
@@ -121400,7 +121400,7 @@ class AbstractProvider {
               } catch (error) {}
               return null;
             })(),
-            priorityFee: (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+            priorityFee: (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
               try {
                 const value = yield _this5.#perform({
                   method: "getPriorityFee"
@@ -121436,7 +121436,7 @@ class AbstractProvider {
   }
   estimateGas(_tx) {
     var _this6 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let tx = _this6._getTransactionRequest(_tx);
       if (isPromise(tx)) {
         tx = yield tx;
@@ -121449,7 +121449,7 @@ class AbstractProvider {
   }
   #call(tx, blockTag, attempt) {
     var _this7 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(attempt < MAX_CCIP_REDIRECTS, "CCIP read exceeded maximum redirections", "OFFCHAIN_FAULT", {
         reason: "TOO_MANY_REDIRECTS",
         transaction: Object.assign({}, tx, {
@@ -121536,7 +121536,7 @@ class AbstractProvider {
   }
   #checkNetwork(promise) {
     var _this8 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         value
       } = yield (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_1__.resolveProperties)({
@@ -121548,7 +121548,7 @@ class AbstractProvider {
   }
   call(_tx) {
     var _this9 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         tx,
         blockTag
@@ -121562,7 +121562,7 @@ class AbstractProvider {
   // Account
   #getAccountValue(request, _address, _blockTag) {
     var _this10 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let address = _this10._getAddress(_address);
       let blockTag = _this10._getBlockTag(_blockTag);
       if (typeof address !== "string" || typeof blockTag !== "string") {
@@ -121576,7 +121576,7 @@ class AbstractProvider {
   }
   getBalance(address, blockTag) {
     var _this11 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_9__.getBigInt)(yield _this11.#getAccountValue({
         method: "getBalance"
       }, address, blockTag), "%response");
@@ -121584,7 +121584,7 @@ class AbstractProvider {
   }
   getTransactionCount(address, blockTag) {
     var _this12 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_9__.getNumber)(yield _this12.#getAccountValue({
         method: "getTransactionCount"
       }, address, blockTag), "%response");
@@ -121592,7 +121592,7 @@ class AbstractProvider {
   }
   getCode(address, blockTag) {
     var _this13 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__.hexlify)(yield _this13.#getAccountValue({
         method: "getCode"
       }, address, blockTag));
@@ -121600,7 +121600,7 @@ class AbstractProvider {
   }
   getStorage(address, _position, blockTag) {
     var _this14 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const position = (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_9__.getBigInt)(_position, "position");
       return (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__.hexlify)(yield _this14.#getAccountValue({
         method: "getStorage",
@@ -121611,7 +121611,7 @@ class AbstractProvider {
   // Write
   broadcastTransaction(signedTx) {
     var _this15 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         blockNumber,
         hash,
@@ -121633,7 +121633,7 @@ class AbstractProvider {
   }
   #getBlock(block, includeTransactions) {
     var _this16 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // @TODO: Add CustomBlockPlugin check
       if ((0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__.isHexString)(block, 32)) {
         return yield _this16.#perform({
@@ -121656,7 +121656,7 @@ class AbstractProvider {
   // Queries
   getBlock(block, prefetchTxs) {
     var _this17 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         network,
         params
@@ -121672,7 +121672,7 @@ class AbstractProvider {
   }
   getTransaction(hash) {
     var _this18 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         network,
         params
@@ -121691,7 +121691,7 @@ class AbstractProvider {
   }
   getTransactionReceipt(hash) {
     var _this19 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         network,
         params
@@ -121722,7 +121722,7 @@ class AbstractProvider {
   }
   getTransactionResult(hash) {
     var _this20 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         result
       } = yield (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_1__.resolveProperties)({
@@ -121741,7 +121741,7 @@ class AbstractProvider {
   // Bloom-filter Queries
   getLogs(_filter) {
     var _this21 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let filter = _this21._getFilter(_filter);
       if (isPromise(filter)) {
         filter = yield filter;
@@ -121767,13 +121767,13 @@ class AbstractProvider {
   }
   getResolver(name) {
     var _this22 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _ens_resolver_js__WEBPACK_IMPORTED_MODULE_11__.EnsResolver.fromName(_this22, name);
     })();
   }
   getAvatar(name) {
     var _this23 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const resolver = yield _this23.getResolver(name);
       if (resolver) {
         return yield resolver.getAvatar();
@@ -121783,7 +121783,7 @@ class AbstractProvider {
   }
   resolveName(name) {
     var _this24 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const resolver = yield _this24.getResolver(name);
       if (resolver) {
         return yield resolver.getAddress();
@@ -121793,7 +121793,7 @@ class AbstractProvider {
   }
   lookupAddress(address) {
     var _this25 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       address = (0,_address_index_js__WEBPACK_IMPORTED_MODULE_12__.getAddress)(address);
       const node = (0,_hash_index_js__WEBPACK_IMPORTED_MODULE_13__.namehash)(address.substring(2).toLowerCase() + ".addr.reverse");
       try {
@@ -121827,16 +121827,16 @@ class AbstractProvider {
   }
   waitForTransaction(hash, _confirms, timeout) {
     var _this26 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const confirms = _confirms != null ? _confirms : 1;
       if (confirms === 0) {
         return _this26.getTransactionReceipt(hash);
       }
       return new Promise( /*#__PURE__*/function () {
-        var _ref8 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (resolve, reject) {
+        var _ref8 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (resolve, reject) {
           let timer = null;
           const _listener = /*#__PURE__*/function () {
-            var _ref9 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (blockNumber) {
+            var _ref9 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (blockNumber) {
               try {
                 const receipt = yield _this26.getTransactionReceipt(hash);
                 if (receipt != null) {
@@ -121880,7 +121880,7 @@ class AbstractProvider {
     })();
   }
   waitForBlock(blockTag) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assert)(false, "not implemented yet", "NOT_IMPLEMENTED", {
         operation: "waitForBlock"
       });
@@ -121996,7 +121996,7 @@ class AbstractProvider {
   }
   #hasSub(event, emitArgs) {
     var _this27 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let sub = yield getSubscription(event, _this27);
       // This is a log that is removing an existing log; we actually want
       // to emit an orphan event for the removed log
@@ -122011,7 +122011,7 @@ class AbstractProvider {
   }
   #getSub(event) {
     var _this28 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const subscription = yield getSubscription(event, _this28);
       // Prevent tampering with our tag in any subclass' _getSubscriber
       const tag = subscription.tag;
@@ -122035,7 +122035,7 @@ class AbstractProvider {
   }
   on(event, listener) {
     var _this29 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const sub = yield _this29.#getSub(event);
       sub.listeners.push({
         listener,
@@ -122053,7 +122053,7 @@ class AbstractProvider {
   }
   once(event, listener) {
     var _this30 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const sub = yield _this30.#getSub(event);
       sub.listeners.push({
         listener,
@@ -122071,7 +122071,7 @@ class AbstractProvider {
   }
   emit(event, ...args) {
     var _this31 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const sub = yield _this31.#hasSub(event, args);
       // If there is not subscription or if a recent emit removed
       // the last of them (which also deleted the sub) do nothing
@@ -122101,7 +122101,7 @@ class AbstractProvider {
   }
   listenerCount(event) {
     var _this32 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (event) {
         const sub = yield _this32.#hasSub(event);
         if (!sub) {
@@ -122120,7 +122120,7 @@ class AbstractProvider {
   }
   listeners(event) {
     var _this33 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (event) {
         const sub = yield _this33.#hasSub(event);
         if (!sub) {
@@ -122143,7 +122143,7 @@ class AbstractProvider {
   }
   off(event, listener) {
     var _this34 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const sub = yield _this34.#hasSub(event);
       if (!sub) {
         return _this34;
@@ -122167,7 +122167,7 @@ class AbstractProvider {
   }
   removeAllListeners(event) {
     var _this35 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (event) {
         const {
           tag,
@@ -122195,14 +122195,14 @@ class AbstractProvider {
   // Alias for "on"
   addListener(event, listener) {
     var _this36 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this36.on(event, listener);
     })();
   }
   // Alias for "off"
   removeListener(event, listener) {
     var _this37 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this37.off(event, listener);
     })();
   }
@@ -122444,7 +122444,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AbstractSigner: () => (/* binding */ AbstractSigner),
 /* harmony export */   VoidSigner: () => (/* binding */ VoidSigner)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../address/index.js */ 6744);
 /* harmony import */ var _transaction_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../transaction/index.js */ 9373);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/index.js */ 2333);
@@ -122481,7 +122481,7 @@ function populate(_x, _x2) {
  *
  */
 function _populate() {
-  _populate = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (signer, tx) {
+  _populate = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (signer, tx) {
     let pop = (0,_provider_js__WEBPACK_IMPORTED_MODULE_2__.copyRequest)(tx);
     if (pop.to != null) {
       pop.to = (0,_address_index_js__WEBPACK_IMPORTED_MODULE_3__.resolveAddress)(pop.to, signer);
@@ -122514,20 +122514,20 @@ class AbstractSigner {
   }
   getNonce(blockTag) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return checkProvider(_this, "getTransactionCount").getTransactionCount(yield _this.getAddress(), blockTag);
     })();
   }
   populateCall(tx) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const pop = yield populate(_this2, tx);
       return pop;
     })();
   }
   populateTransaction(tx) {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const provider = checkProvider(_this3, "populateTransaction");
       const pop = yield populate(_this3, tx);
       if (pop.nonce == null) {
@@ -122627,26 +122627,26 @@ class AbstractSigner {
   }
   estimateGas(tx) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return checkProvider(_this4, "estimateGas").estimateGas(yield _this4.populateCall(tx));
     })();
   }
   call(tx) {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return checkProvider(_this5, "call").call(yield _this5.populateCall(tx));
     })();
   }
   resolveName(name) {
     var _this6 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const provider = checkProvider(_this6, "resolveName");
       return yield provider.resolveName(name);
     })();
   }
   sendTransaction(tx) {
     var _this7 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const provider = checkProvider(_this7, "sendTransaction");
       const pop = yield _this7.populateTransaction(tx);
       delete pop.from;
@@ -122680,7 +122680,7 @@ class VoidSigner extends AbstractSigner {
   }
   getAddress() {
     var _this8 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this8.address;
     })();
   }
@@ -122694,19 +122694,19 @@ class VoidSigner extends AbstractSigner {
   }
   signTransaction(tx) {
     var _this9 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this9.#throwUnsupported("transactions", "signTransaction");
     })();
   }
   signMessage(message) {
     var _this10 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this10.#throwUnsupported("messages", "signMessage");
     })();
   }
   signTypedData(domain, types, value) {
     var _this11 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this11.#throwUnsupported("typed-data", "signTypedData");
     })();
   }
@@ -122726,7 +122726,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   EnsResolver: () => (/* binding */ EnsResolver),
 /* harmony export */   MulticoinProviderPlugin: () => (/* binding */ MulticoinProviderPlugin)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../address/index.js */ 997);
 /* harmony import */ var _constants_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants/index.js */ 2692);
 /* harmony import */ var _contract_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../contract/index.js */ 6171);
@@ -122792,7 +122792,7 @@ class MulticoinProviderPlugin {
    *  Resolves to the encoded %%address%% for %%coinType%%.
    */
   encodeAddress(coinType, address) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       throw new Error("unsupported coin");
     })();
   }
@@ -122800,7 +122800,7 @@ class MulticoinProviderPlugin {
    *  Resolves to the decoded %%data%% for %%coinType%%.
    */
   decodeAddress(coinType, data) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       throw new Error("unsupported coin");
     })();
   }
@@ -122855,9 +122855,9 @@ class EnsResolver {
    */
   supportsWildcard() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this.#supports2544 == null) {
-        _this.#supports2544 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        _this.#supports2544 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           try {
             return yield _this.#resolver.supportsInterface("0x9061b923");
           } catch (error) {
@@ -122877,7 +122877,7 @@ class EnsResolver {
   }
   #fetch(funcName, params) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       params = (params || []).slice();
       const iface = _this2.#resolver.interface;
       // The first parameters is always the nodehash
@@ -122916,7 +122916,7 @@ class EnsResolver {
    */
   getAddress(coinType) {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (coinType == null) {
         coinType = 60;
       }
@@ -122982,7 +122982,7 @@ class EnsResolver {
    */
   getText(key) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const data = yield _this4.#fetch("text(bytes32,string)", [key]);
       if (data == null || data === "0x") {
         return null;
@@ -122995,7 +122995,7 @@ class EnsResolver {
    */
   getContentHash() {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // keccak256("contenthash()")
       const data = yield _this5.#fetch("contenthash(bytes32)");
       // No contenthash
@@ -123034,7 +123034,7 @@ class EnsResolver {
    */
   getAvatar() {
     var _this6 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const avatar = yield _this6._getAvatar();
       return avatar.url;
     })();
@@ -123049,7 +123049,7 @@ class EnsResolver {
    */
   _getAvatar() {
     var _this7 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const linkage = [{
         type: "name",
         value: _this7.name
@@ -123305,7 +123305,7 @@ class EnsResolver {
     })();
   }
   static getEnsAddress(provider) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const network = yield provider.getNetwork();
       const ensPlugin = network.getPlugin("org.ethers.plugins.network.Ens");
       // No ENS...
@@ -123319,7 +123319,7 @@ class EnsResolver {
     })();
   }
   static #getResolver(provider, name) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const ensAddr = yield EnsResolver.getEnsAddress(provider);
       try {
         const contract = new _contract_index_js__WEBPACK_IMPORTED_MODULE_3__.Contract(ensAddr, ["function resolver(bytes32) view returns (address)"], provider);
@@ -123343,7 +123343,7 @@ class EnsResolver {
    *  ``null`` if unconfigured.
    */
   static fromName(provider, name) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let currentName = name;
       while (true) {
         if (currentName === "" || currentName === ".") {
@@ -123681,7 +123681,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Network: () => (/* binding */ Network)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _transaction_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../transaction/index.js */ 8279);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/index.js */ 1079);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/index.js */ 2333);
@@ -123962,7 +123962,7 @@ function parseUnits(_value, decimals) {
 // Used by Polygon to use a gas station for fee data
 function getGasStationPlugin(url) {
   return new _plugins_network_js__WEBPACK_IMPORTED_MODULE_2__.FetchUrlFeeDataNetworkPlugin(url, /*#__PURE__*/function () {
-    var _ref = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetchFeeData, provider, request) {
+    var _ref = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (fetchFeeData, provider, request) {
       // Prevent Cloudflare from blocking our request in node.js
       request.setHeader("User-Agent", "ethers");
       let response;
@@ -124098,7 +124098,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   GasCostPlugin: () => (/* binding */ GasCostPlugin),
 /* harmony export */   NetworkPlugin: () => (/* binding */ NetworkPlugin)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _utils_properties_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/properties.js */ 5519);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ 2333);
 
@@ -124261,7 +124261,7 @@ class FeeDataNetworkPlugin extends NetworkPlugin {
    */
   getFeeData(provider) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this.#feeDataFunc(provider);
     })();
   }
@@ -124335,7 +124335,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   BrowserProvider: () => (/* binding */ BrowserProvider)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ 2333);
 /* harmony import */ var _provider_jsonrpc_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./provider-jsonrpc.js */ 374);
 
@@ -124363,7 +124363,7 @@ class BrowserProvider extends _provider_jsonrpc_js__WEBPACK_IMPORTED_MODULE_1__.
     super(network, options);
     _this = this;
     this.#request = /*#__PURE__*/function () {
-      var _ref = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (method, params) {
+      var _ref = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (method, params) {
         const payload = {
           method,
           params
@@ -124399,14 +124399,14 @@ class BrowserProvider extends _provider_jsonrpc_js__WEBPACK_IMPORTED_MODULE_1__.
   send(method, params) {
     var _superprop_getSend = () => super.send,
       _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       yield _this2._start();
       return yield _superprop_getSend().call(_this2, method, params);
     })();
   }
   _send(payload) {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__.assertArgument)(!Array.isArray(payload), "EIP-1193 does not support batch request", "payload", payload);
       try {
         const result = yield _this3.#request(payload.method, payload.params || []);
@@ -124445,7 +124445,7 @@ class BrowserProvider extends _provider_jsonrpc_js__WEBPACK_IMPORTED_MODULE_1__.
    */
   hasSigner(address) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (address == null) {
         address = 0;
       }
@@ -124460,7 +124460,7 @@ class BrowserProvider extends _provider_jsonrpc_js__WEBPACK_IMPORTED_MODULE_1__.
   getSigner(address) {
     var _superprop_getGetSigner = () => super.getSigner,
       _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (address == null) {
         address = 0;
       }
@@ -124497,7 +124497,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   JsonRpcProvider: () => (/* binding */ JsonRpcProvider),
 /* harmony export */   JsonRpcSigner: () => (/* binding */ JsonRpcSigner)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _abi_index_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../abi/index.js */ 9265);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../address/index.js */ 997);
 /* harmony import */ var _address_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../address/index.js */ 6744);
@@ -124600,14 +124600,14 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
   }
   getAddress() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this.address;
     })();
   }
   // JSON-RPC will automatially fill in nonce, etc. so we just check from
   populateTransaction(tx) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this2.populateCall(tx);
     })();
   }
@@ -124615,13 +124615,13 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
   // the bare JSON-RPC API does;
   sendUncheckedTransaction(_tx) {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const tx = deepCopy(_tx);
       const promises = [];
       // Make sure the from matches the sender
       if (tx.from) {
         const _from = tx.from;
-        promises.push((0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        promises.push((0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           const from = yield (0,_address_index_js__WEBPACK_IMPORTED_MODULE_5__.resolveAddress)(_from, _this3.provider);
           (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assertArgument)(from != null && from.toLowerCase() === _this3.address.toLowerCase(), "from address mismatch", "transaction", _tx);
           tx.from = from;
@@ -124633,7 +124633,7 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
       // wishes to use this, it is easy to specify explicitly, otherwise
       // we look it up for them.
       if (tx.gasLimit == null) {
-        promises.push((0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        promises.push((0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           tx.gasLimit = yield _this3.provider.estimateGas({
             ...tx,
             from: _this3.address
@@ -124643,7 +124643,7 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
       // The address may be an ENS name or Addressable
       if (tx.to != null) {
         const _to = tx.to;
-        promises.push((0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        promises.push((0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           tx.to = yield (0,_address_index_js__WEBPACK_IMPORTED_MODULE_5__.resolveAddress)(_to, _this3.provider);
         })());
       }
@@ -124657,7 +124657,7 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
   }
   sendTransaction(tx) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // This cannot be mined any earlier than any recent block
       const blockNumber = yield _this4.provider.getBlockNumber();
       // Send the transaction
@@ -124669,7 +124669,7 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
         const timeouts = [1000, 100];
         let invalids = 0;
         const _checkTx = /*#__PURE__*/function () {
-          var _ref4 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+          var _ref4 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
             try {
               // Try getting the transaction
               const tx = yield _this4.provider.getTransaction(hash);
@@ -124723,7 +124723,7 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
   }
   signTransaction(_tx) {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const tx = deepCopy(_tx);
       // Make sure the from matches the sender
       if (tx.from) {
@@ -124739,18 +124739,18 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
   }
   signMessage(_message) {
     var _this6 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const message = typeof _message === "string" ? (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_6__.toUtf8Bytes)(_message) : _message;
       return yield _this6.provider.send("personal_sign", [(0,_utils_index_js__WEBPACK_IMPORTED_MODULE_7__.hexlify)(message), _this6.address.toLowerCase()]);
     })();
   }
   signTypedData(domain, types, _value) {
     var _this7 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const value = deepCopy(_value);
       // Populate any ENS names (in-place)
       const populated = yield _hash_index_js__WEBPACK_IMPORTED_MODULE_8__.TypedDataEncoder.resolveNames(domain, types, value, /*#__PURE__*/function () {
-        var _ref5 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
+        var _ref5 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
           const address = yield (0,_address_index_js__WEBPACK_IMPORTED_MODULE_5__.resolveAddress)(value);
           (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_4__.assertArgument)(address != null, "TypedData does not support null address", "value", value);
           return address;
@@ -124764,14 +124764,14 @@ class JsonRpcSigner extends _abstract_signer_js__WEBPACK_IMPORTED_MODULE_1__.Abs
   }
   unlock(password) {
     var _this8 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this8.provider.send("personal_unlockAccount", [_this8.address.toLowerCase(), password, null]);
     })();
   }
   // https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_sign
   _legacySignMessage(_message) {
     var _this9 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const message = typeof _message === "string" ? (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_6__.toUtf8Bytes)(_message) : _message;
       return yield _this9.provider.send("eth_sign", [_this9.address.toLowerCase(), (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_7__.hexlify)(message)]);
     })();
@@ -124823,7 +124823,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
           }
         }
         // Process the result to each payload
-        (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           const payload = batch.length === 1 ? batch[0].payload : batch.map(p => p.payload);
           _this10.emit("debug", {
             action: "sendRpcPayload",
@@ -124940,7 +124940,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
   _perform(req) {
     var _superprop_get_perform = () => super._perform,
       _this11 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // Legacy networks do not like the type field being passed along (which
       // is fair), so we delete type if it is 0 and a non-EIP-1559 network
       if (req.method === "call" || req.method === "estimateGas") {
@@ -124976,7 +124976,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
    */
   _detectNetwork() {
     var _this12 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const network = _this12._getOption("staticNetwork");
       if (network) {
         if (network === true) {
@@ -124992,7 +124992,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
       }
       // If we are ready, use ``send``, which enabled requests to be batched
       if (_this12.ready) {
-        _this12.#pendingDetectNetwork = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        _this12.#pendingDetectNetwork = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           try {
             const result = _network_js__WEBPACK_IMPORTED_MODULE_10__.Network.from((0,_utils_index_js__WEBPACK_IMPORTED_MODULE_11__.getBigInt)(yield _this12.send("eth_chainId", [])));
             _this12.#pendingDetectNetwork = null;
@@ -125005,7 +125005,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
         return yield _this12.#pendingDetectNetwork;
       }
       // We are not ready yet; use the primitive _send
-      _this12.#pendingDetectNetwork = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      _this12.#pendingDetectNetwork = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
         const payload = {
           id: _this12.#nextId++,
           method: "eth_chainId",
@@ -125054,7 +125054,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
     }
     this.#notReady.resolve();
     this.#notReady = null;
-    (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // Bootstrap the network
       while (_this13.#network == null && !_this13.destroyed) {
         try {
@@ -125084,7 +125084,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
    */
   _waitUntilReady() {
     var _this14 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this14.#notReady == null) {
         return;
       }
@@ -125428,7 +125428,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
    */
   getSigner(address) {
     var _this15 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (address == null) {
         address = 0;
       }
@@ -125459,7 +125459,7 @@ class JsonRpcApiProvider extends _abstract_provider_js__WEBPACK_IMPORTED_MODULE_
   }
   listAccounts() {
     var _this16 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const accounts = yield _this16.send("eth_accounts", []);
       return accounts.map(a => new JsonRpcSigner(_this16, a));
     })();
@@ -125552,7 +125552,7 @@ class JsonRpcProvider extends JsonRpcApiPollingProvider {
   send(method, params) {
     var _superprop_getSend = () => super.send,
       _this17 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // All requests are over HTTP, so we can just start handling requests
       // We do this here rather than the constructor so that we don't send any
       // requests to the network (i.e. eth_chainId) until we absolutely have to.
@@ -125562,7 +125562,7 @@ class JsonRpcProvider extends JsonRpcApiPollingProvider {
   }
   _send(payload) {
     var _this18 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // Configure a POST connection for the requested method
       const request = _this18._getConnection();
       request.body = JSON.stringify(payload);
@@ -125650,7 +125650,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   TransactionResponse: () => (/* binding */ TransactionResponse),
 /* harmony export */   copyRequest: () => (/* binding */ copyRequest)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/index.js */ 5519);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ 3666);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/index.js */ 1079);
@@ -126045,7 +126045,7 @@ class Block {
    */
   getTransaction(indexOrHash) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // Find the internal value by its index or hash
       let tx = undefined;
       if (typeof indexOrHash === "number") {
@@ -126233,7 +126233,7 @@ class Log {
    */
   getBlock() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const block = yield _this2.provider.getBlock(_this2.blockHash);
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_5__.assert)(!!block, "failed to find transaction", "UNKNOWN_ERROR", {});
       return block;
@@ -126244,7 +126244,7 @@ class Log {
    */
   getTransaction() {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const tx = yield _this3.provider.getTransaction(_this3.transactionHash);
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_5__.assert)(!!tx, "failed to find transaction", "UNKNOWN_ERROR", {});
       return tx;
@@ -126256,7 +126256,7 @@ class Log {
    */
   getTransactionReceipt() {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const receipt = yield _this4.provider.getTransactionReceipt(_this4.transactionHash);
       (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_5__.assert)(!!receipt, "failed to find transaction receipt", "UNKNOWN_ERROR", {});
       return receipt;
@@ -126498,7 +126498,7 @@ class TransactionReceipt {
    */
   getBlock() {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const block = yield _this5.provider.getBlock(_this5.blockHash);
       if (block == null) {
         throw new Error("TODO");
@@ -126511,7 +126511,7 @@ class TransactionReceipt {
    */
   getTransaction() {
     var _this6 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const tx = yield _this6.provider.getTransaction(_this6.hash);
       if (tx == null) {
         throw new Error("TODO");
@@ -126527,7 +126527,7 @@ class TransactionReceipt {
    */
   getResult() {
     var _this7 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield _this7.provider.getTransactionResult(_this7.hash);
     })();
   }
@@ -126536,7 +126536,7 @@ class TransactionReceipt {
    */
   confirmations() {
     var _this8 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return (yield _this8.provider.getBlockNumber()) - _this8.blockNumber + 1;
     })();
   }
@@ -126755,7 +126755,7 @@ class TransactionResponse {
    */
   getBlock() {
     var _this9 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let blockNumber = _this9.blockNumber;
       if (blockNumber == null) {
         const tx = yield _this9.getTransaction();
@@ -126780,7 +126780,7 @@ class TransactionResponse {
    */
   getTransaction() {
     var _this10 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this10.provider.getTransaction(_this10.hash);
     })();
   }
@@ -126789,7 +126789,7 @@ class TransactionResponse {
    */
   confirmations() {
     var _this11 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this11.blockNumber == null) {
         const {
           tx,
@@ -126819,14 +126819,14 @@ class TransactionResponse {
    */
   wait(_confirms, _timeout) {
     var _this12 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const confirms = _confirms == null ? 1 : _confirms;
       const timeout = _timeout == null ? 0 : _timeout;
       let startBlock = _this12.#startBlock;
       let nextScan = -1;
       let stopScanning = startBlock === -1 ? true : false;
       const checkReplacement = /*#__PURE__*/function () {
-        var _ref = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        var _ref = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           // Get the current transaction count for this sender
           if (stopScanning) {
             return null;
@@ -126972,7 +126972,7 @@ class TransactionResponse {
           });
         }
         const txListener = /*#__PURE__*/function () {
-          var _ref2 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (receipt) {
+          var _ref2 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (receipt) {
             // Done; return it!
             if ((yield receipt.confirmations()) >= confirms) {
               cancel();
@@ -126994,7 +126994,7 @@ class TransactionResponse {
         // We support replacement detection; start checking
         if (startBlock >= 0) {
           const _replaceListener = /*#__PURE__*/function () {
-            var _ref3 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+            var _ref3 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
               try {
                 // Check for a replacement; this throws only if one is found
                 yield checkReplacement();
@@ -127163,7 +127163,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   FilterIdPendingSubscriber: () => (/* binding */ FilterIdPendingSubscriber),
 /* harmony export */   FilterIdSubscriber: () => (/* binding */ FilterIdSubscriber)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/index.js */ 2333);
 /* harmony import */ var _subscriber_polling_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./subscriber-polling.js */ 2383);
 
@@ -127222,7 +127222,7 @@ class FilterIdSubscriber {
   }
   #poll(blockNumber) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         // Subscribe if necessary
         if (_this.#filterIdPromise == null) {
@@ -127320,14 +127320,14 @@ class FilterIdEventSubscriber extends FilterIdSubscriber {
   }
   _subscribe(provider) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const filterId = yield provider.send("eth_newFilter", [_this2.#event]);
       return filterId;
     })();
   }
   _emitResults(provider, results) {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       for (const result of results) {
         provider.emit(_this3.#event, provider._wrapLog(result, provider._network));
       }
@@ -127341,12 +127341,12 @@ class FilterIdEventSubscriber extends FilterIdSubscriber {
  */
 class FilterIdPendingSubscriber extends FilterIdSubscriber {
   _subscribe(provider) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return yield provider.send("eth_newPendingTransactionFilter", []);
     })();
   }
   _emitResults(provider, results) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       for (const result of results) {
         provider.emit("pending", result);
       }
@@ -127372,7 +127372,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   PollingTransactionSubscriber: () => (/* binding */ PollingTransactionSubscriber),
 /* harmony export */   getPollingSubscriber: () => (/* binding */ getPollingSubscriber)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/index.js */ 3666);
 /* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ 2333);
 
@@ -127433,7 +127433,7 @@ class PollingBlockSubscriber {
   }
   #poll() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const blockNumber = yield _this.#provider.getBlockNumber();
         // Bootstrap poll to setup our initial block number
@@ -127512,7 +127512,7 @@ class OnBlockSubscriber {
    *  Called on every new block.
    */
   _poll(blockNumber, provider) {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       throw new Error("sub-classes must override this");
     })();
   }
@@ -127554,7 +127554,7 @@ class PollingBlockTagSubscriber extends OnBlockSubscriber {
   }
   _poll(blockNumber, provider) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const block = yield provider.getBlock(_this2.#tag);
       if (block == null) {
         return;
@@ -127581,7 +127581,7 @@ class PollingOrphanSubscriber extends OnBlockSubscriber {
   }
   _poll(blockNumber, provider) {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       throw new Error("@TODO");
       console.log(_this3.#filter);
     })();
@@ -127605,7 +127605,7 @@ class PollingTransactionSubscriber extends OnBlockSubscriber {
   }
   _poll(blockNumber, provider) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const tx = yield provider.getTransactionReceipt(_this4.#hash);
       if (tx) {
         provider.emit(_this4.#hash, tx);
@@ -127639,7 +127639,7 @@ class PollingEventSubscriber {
   }
   #poll(blockNumber) {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       // The initial block hasn't been determined yet
       if (_this5.#blockNumber === -2) {
         return;
@@ -129360,7 +129360,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   EventPayload: () => (/* binding */ EventPayload)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _properties_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./properties.js */ 5519);
 
 /**
@@ -129402,7 +129402,7 @@ class EventPayload {
    */
   removeListener() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (_this.#listener == null) {
         return;
       }
@@ -129425,7 +129425,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   FetchRequest: () => (/* binding */ FetchRequest),
 /* harmony export */   FetchResponse: () => (/* binding */ FetchResponse)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _base64_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./base64.js */ 632);
 /* harmony import */ var _data_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data.js */ 3666);
 /* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./errors.js */ 2333);
@@ -129475,7 +129475,7 @@ function dataGatewayFunc(_x, _x2) {
  *  IPFS gateway hosted at %%baseUrl%%.
  */
 function _dataGatewayFunc() {
-  _dataGatewayFunc = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, signal) {
+  _dataGatewayFunc = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, signal) {
     try {
       const match = url.match(reData);
       if (!match) {
@@ -129495,7 +129495,7 @@ function getIpfsGatewayFunc(baseUrl) {
     return _gatewayIpfs.apply(this, arguments);
   }
   function _gatewayIpfs() {
-    _gatewayIpfs = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, signal) {
+    _gatewayIpfs = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (url, signal) {
       try {
         const match = url.match(reIpfs);
         if (!match) {
@@ -129872,7 +129872,7 @@ class FetchRequest {
   }
   #send(attempt, expires, delay, _request, _response) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (attempt >= _this.#throttle.maxAttempts) {
         return _response.makeServerError("exceeded maximum retry limit");
       }
@@ -130953,7 +130953,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   createGetUrl: () => (/* binding */ createGetUrl),
 /* harmony export */   getUrl: () => (/* binding */ getUrl)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./errors.js */ 2333);
 
 
@@ -130962,7 +130962,7 @@ function createGetUrl(options) {
     return _getUrl.apply(this, arguments);
   }
   function _getUrl() {
-    _getUrl = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (req, _signal) {
+    _getUrl = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (req, _signal) {
       (0,_errors_js__WEBPACK_IMPORTED_MODULE_1__.assert)(_signal == null || !_signal.cancelled, "request cancelled before sending", "CANCELLED");
       const protocol = req.url.split(":")[0].toLowerCase();
       (0,_errors_js__WEBPACK_IMPORTED_MODULE_1__.assert)(protocol === "http" || protocol === "https", `unsupported protocol ${protocol}`, "UNSUPPORTED_OPERATION", {
@@ -131026,7 +131026,7 @@ function getUrl(_x3, _x4) {
   return _getUrl2.apply(this, arguments);
 }
 function _getUrl2() {
-  _getUrl2 = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (req, _signal) {
+  _getUrl2 = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (req, _signal) {
     return defaultGetUrl(req, _signal);
   });
   return _getUrl2.apply(this, arguments);
@@ -131289,7 +131289,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   defineProperties: () => (/* binding */ defineProperties),
 /* harmony export */   resolveProperties: () => (/* binding */ resolveProperties)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 
 /**
  *  Property helper functions.
@@ -131330,7 +131330,7 @@ function resolveProperties(_x) {
  *  It %%types%% is specified, the values are checked.
  */
 function _resolveProperties() {
-  _resolveProperties = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
+  _resolveProperties = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (value) {
     const keys = Object.keys(value);
     const results = yield Promise.all(keys.map(k => Promise.resolve(value[k])));
     return results.reduce((accum, v, index) => {
@@ -134866,7 +134866,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   pbkdf2: () => (/* binding */ pbkdf2),
 /* harmony export */   pbkdf2Async: () => (/* binding */ pbkdf2Async)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _assert_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_assert.js */ 623);
 /* harmony import */ var _hmac_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hmac.js */ 369);
 /* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils.js */ 2829);
@@ -134953,7 +134953,7 @@ function pbkdf2Async(_x, _x2, _x3, _x4) {
   return _pbkdf2Async.apply(this, arguments);
 }
 function _pbkdf2Async() {
-  _pbkdf2Async = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (hash, password, salt, opts) {
+  _pbkdf2Async = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (hash, password, salt, opts) {
     const {
       c,
       dkLen,
@@ -135690,7 +135690,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   wrapConstructorWithOpts: () => (/* binding */ wrapConstructorWithOpts),
 /* harmony export */   wrapXOFConstructorWithOpts: () => (/* binding */ wrapXOFConstructorWithOpts)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _noble_hashes_crypto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @noble/hashes/crypto */ 6464);
 
 /*! noble-hashes - MIT License (c) 2022 Paul Miller (paulmillr.com) */
@@ -135749,7 +135749,7 @@ function hexToBytes(hex) {
 // call of async fn will return Promise, which will be fullfiled only on
 // next scheduler queue processing step and this is exactly what we need.
 const nextTick = /*#__PURE__*/function () {
-  var _ref = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {});
+  var _ref = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {});
   return function nextTick() {
     return _ref.apply(this, arguments);
   };
@@ -135762,7 +135762,7 @@ function asyncLoop(_x, _x2, _x3) {
  * @example utf8ToBytes('abc') // new Uint8Array([97, 98, 99])
  */
 function _asyncLoop() {
-  _asyncLoop = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (iters, tick, cb) {
+  _asyncLoop = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (iters, tick, cb) {
     let ts = Date.now();
     for (let i = 0; i < iters; i++) {
       cb(i);

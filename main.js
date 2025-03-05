@@ -678,7 +678,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AuthService: () => (/* binding */ AuthService)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 6196);
 /* harmony import */ var src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/core/services/config/config.service */ 7629);
 /* harmony import */ var src_app_dto_enum_user_type__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/dto/enum/user_type */ 8392);
@@ -702,21 +702,21 @@ class AuthService {
   }
   getLoginMessage() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const httpRequest = _this._http.get(`${_this._config.cSharpBaseApiUrl}/api/Auth/login`);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(httpRequest);
     })();
   }
   getSignupMessage() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const httpRequest = _this2._http.get(`${_this2._config.cSharpBaseApiUrl}/api/Auth/signup`);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(httpRequest);
     })();
   }
   createPlayer(player, auth) {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const suffix = player.userType == src_app_dto_enum_user_type__WEBPACK_IMPORTED_MODULE_2__.UserType.GameOwner ? 'owner' : 'player';
         const {
@@ -748,7 +748,7 @@ class AuthService {
   }
   login(auth) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const {
           userType,
@@ -807,7 +807,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ConfigService)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var src_environments_environment_development__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/environments/environment.development */ 3587);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
 
@@ -831,7 +831,7 @@ class ConfigService {
   }
   load(http) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         _this._config.gameTokenFactoryConfig = yield _this.loadTokenfactoryContractData(http);
       } catch (e) {
@@ -842,7 +842,7 @@ class ConfigService {
   }
   loadTokenfactoryContractData(http) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return new Promise((resolve, reject) => {
         http.get(`${_this2._config.nodeBaseApiUrl}/contract/GameTokenFactory/metadata`).subscribe({
           next: data => resolve({
@@ -880,7 +880,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Web3ProviderService: () => (/* binding */ Web3ProviderService)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var ethers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ethers */ 3666);
 /* harmony import */ var ethers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ethers */ 1889);
 /* harmony import */ var ethers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ethers */ 5995);
@@ -909,20 +909,20 @@ class Web3ProviderService extends ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserPro
   }
   chainId() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const chainId = (yield _this.getNetwork()).chainId;
       return Promise.resolve(Number(chainId));
     })();
   }
   currentAccount() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return _this2.getSigner();
     })();
   }
   connect() {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (!window.ethereum) {
         return Promise.reject(new Error('Please install MetaMask or another wallet extension.'));
       }
@@ -949,7 +949,7 @@ class Web3ProviderService extends ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserPro
   */
   signTypedData_v4(eip721Data) {
     var _this4 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const signer = yield _this4.getSigner();
         const signature = yield _this4.send('eth_signTypedData_v4', [signer.address, eip721Data]);
@@ -962,7 +962,7 @@ class Web3ProviderService extends ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserPro
   }
   signPersonal(message) {
     var _this5 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const signer = yield _this5.getSigner();
         // Converte a string em bytes e depois para hexadecimal
@@ -1122,7 +1122,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LoginPageComponent: () => (/* binding */ LoginPageComponent)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 4456);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 5072);
@@ -1198,7 +1198,7 @@ class LoginPageComponent {
   }
   connectWallet(event) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const accounts = yield _this._web3Provider.connect();
         _this.loginForm.controls['wallet'].setValue(accounts[0]?.toUpperCase());
@@ -1209,7 +1209,7 @@ class LoginPageComponent {
   }
   onSubmit() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const userType = _this2.loginForm.controls['profile'].value;
       const {
         message,
@@ -1336,7 +1336,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SignupPageComponent: () => (/* binding */ SignupPageComponent)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ 4456);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 5072);
@@ -1409,7 +1409,7 @@ class SignupPageComponent {
   }
   connectWallet(event) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const accounts = yield _this._web3Provider.connect();
         _this.stepOneForm.controls['wallet'].setValue(accounts[0]?.toUpperCase());
@@ -1420,7 +1420,7 @@ class SignupPageComponent {
   }
   sign() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const {
           message,
@@ -1442,7 +1442,7 @@ class SignupPageComponent {
   }
   submit() {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         const {
           profile,
@@ -2102,7 +2102,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   NewGameComponent: () => (/* binding */ NewGameComponent)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ 4456);
 /* harmony import */ var src_app_dto_enum_user_type__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/dto/enum/user_type */ 8392);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 7580);
@@ -2494,17 +2494,17 @@ class NewGameComponent {
     });
   }
   ngOnInit() {
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {})();
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {})();
   }
   connect() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this.form.controls['accounts'].setValue(yield _this._tokenFactoryService.connect());
     })();
   }
   createGame() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const {
         hooks
       } = _this2.integrationSection.value;
@@ -2574,7 +2574,7 @@ class NewGameComponent {
   // Apagar após testes
   loadFakeGame() {
     var _this3 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       _this3._gameService.getFakeGame().then(response => {
         const {
           name,
@@ -2815,7 +2815,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   GameService: () => (/* binding */ GameService)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/core/services/config/config.service */ 7629);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 6196);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7580);
@@ -2835,7 +2835,7 @@ class GameService {
   }
   create(newGame) {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = _this._http.post(`${_this._config.cSharpBaseApiUrl}/api/game`, newGame);
       return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(response);
     })();
@@ -2843,7 +2843,7 @@ class GameService {
   // TODO: remover após testes
   getFakeGame() {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const response = _this2._http.get(`${_this2._config.cSharpBaseApiUrl}/api/test/game/new`);
       return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(response);
     })();
@@ -2873,7 +2873,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   TokenFactoryService: () => (/* binding */ TokenFactoryService)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/core/services/config/config.service */ 7629);
 /* harmony import */ var src_app_dto_blockchain_token_factory_contract__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/dto/blockchain/token_factory_contract */ 1584);
 /* harmony import */ var ethers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ethers */ 7471);
@@ -2907,7 +2907,7 @@ class TokenFactoryService {
   // MetamaskService talvez
   connect() {
     var _this = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       try {
         if (!_this.checkMetamaskInstallation()) {
           console.error('MetaMask não detectado.');
@@ -2925,9 +2925,9 @@ class TokenFactoryService {
   }
   deployToken(data) {
     var _this2 = this;
-    return (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return new Promise( /*#__PURE__*/function () {
-        var _ref = (0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (resolve, reject) {
+        var _ref = (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (resolve, reject) {
           try {
             debugger;
             //TODO: talvez, antes de enviar para o blockchain, devemos validar os parametros com nosso back,
@@ -3003,7 +3003,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   appInitializer: () => (/* binding */ appInitializer)
 /* harmony export */ });
-/* harmony import */ var C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 6443);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7580);
 /* harmony import */ var _core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/services/config/config.service */ 7629);
@@ -3014,7 +3014,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function initalizeServices(http, configService) {
-  return /*#__PURE__*/(0,C_Projetos_Thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+  return /*#__PURE__*/(0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
     try {
       // TODO: nao esquecer comentado
       // inicializa config service
