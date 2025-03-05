@@ -411,7 +411,7 @@ class LoggedOutFooterComponent {
         }
       },
       dependencies: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__.MatIconButton],
-      styles: ["[_nghost-%COMP%] {\n  display: flex;\n  padding: 1em 5em 1em 5em;\n}\n\n.section[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.media-area[_ngcontent-%COMP%] {\n  display: flex;\n}\n.media-area[_ngcontent-%COMP%]   .media-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\n.--gray[_ngcontent-%COMP%] {\n  filter: grayscale(1);\n}\n\n.email-icon[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n  filter: invert(100%);\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29yZS9jb21wb25lbnRzL2xvZ2dlZC1vdXQtbGF5b3V0L2xvZ2dlZC1vdXQtZm9vdGVyL2xvZ2dlZC1vdXQtZm9vdGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtFQUNBLHdCQUFBO0FBQ0o7O0FBRUE7RUFDSSxPQUFBO0FBQ0o7O0FBRUE7RUFDSSxhQUFBO0FBQ0o7QUFDSTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtBQUNSOztBQUdBO0VBQ0ksb0JBQUE7QUFBSjs7QUFHQTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0Esb0JBQUE7QUFBSiIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBwYWRkaW5nOiAxZW0gNWVtIDFlbSA1ZW07XHJcbn1cclxuXHJcbi5zZWN0aW9uIHtcclxuICAgIGZsZXg6IDFcclxufVxyXG5cclxuLm1lZGlhLWFyZWEge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIC8vIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICAubWVkaWEtaXRlbSB7XHJcbiAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgfVxyXG59XHJcblxyXG4uLS1ncmF5IHtcclxuICAgIGZpbHRlcjogZ3JheXNjYWxlKDEpO1xyXG59XHJcblxyXG4uZW1haWwtaWNvbiB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGZpbHRlcjogaW52ZXJ0KDEwMCUpO1xyXG59XHJcblxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
+      styles: ["[_nghost-%COMP%] {\n  display: flex;\n  padding: 1em 5em 1em 5em;\n}\n\n.section[_ngcontent-%COMP%] {\n  flex: 1;\n}\n\n.media-area[_ngcontent-%COMP%] {\n  display: flex;\n}\n.media-area[_ngcontent-%COMP%]   .media-item[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n\n.--gray[_ngcontent-%COMP%] {\n  filter: grayscale(1);\n}\n\n.email-icon[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n  filter: invert(100%);\n}\n\n@media (max-width: 768px) {\n  [_nghost-%COMP%] {\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29yZS9jb21wb25lbnRzL2xvZ2dlZC1vdXQtbGF5b3V0L2xvZ2dlZC1vdXQtZm9vdGVyL2xvZ2dlZC1vdXQtZm9vdGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtFQUNBLHdCQUFBO0FBQ0o7O0FBRUE7RUFDSSxPQUFBO0FBQ0o7O0FBRUE7RUFDSSxhQUFBO0FBQ0o7QUFDSTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtBQUNSOztBQUdBO0VBQ0ksb0JBQUE7QUFBSjs7QUFHQTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0Esb0JBQUE7QUFBSjs7QUFJQTtFQUNJO0lBQ0ksVUFBQTtJQUNBLGFBQUE7SUFDQSxzQkFBQTtFQUROO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgcGFkZGluZzogMWVtIDVlbSAxZW0gNWVtO1xyXG59XHJcblxyXG4uc2VjdGlvbiB7XHJcbiAgICBmbGV4OiAxXHJcbn1cclxuXHJcbi5tZWRpYS1hcmVhIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAvLyBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgLm1lZGlhLWl0ZW0ge1xyXG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIH1cclxufVxyXG5cclxuLi0tZ3JheSB7XHJcbiAgICBmaWx0ZXI6IGdyYXlzY2FsZSgxKTtcclxufVxyXG5cclxuLmVtYWlsLWljb24ge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBmaWx0ZXI6IGludmVydCgxMDAlKTtcclxufVxyXG5cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA3NjhweCkge1xyXG4gICAgOmhvc3Qge1xyXG4gICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgfVxyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
 }
@@ -447,7 +447,7 @@ class LoggedOutHeaderComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: LoggedOutHeaderComponent,
       selectors: [["app-logged-out-header"]],
-      decls: 13,
+      decls: 9,
       vars: 0,
       consts: [[1, "logo-container"], ["mat-button", "", "href", "#"], ["svgIcon", "logo"], [1, "menu-container"], ["mat-flat-button", "", "href", "/login"]],
       template: function LoggedOutHeaderComponent_Template(rf, ctx) {
@@ -457,14 +457,8 @@ class LoggedOutHeaderComponent {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "span");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Thornament");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3)(7, "a", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Discover");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 1);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Tournaments");
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Sign in");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3)(7, "a", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Sign in");
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
         }
       },
