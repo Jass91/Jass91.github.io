@@ -1,0 +1,45 @@
+.mat-stepper-horizontal {
+  margin-top: 1em;
+}
+
+.mat-mdc-form-field {
+  margin-top: 1em;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  .login-container {
+    min-width: 400px;
+  }
+  
+  .button-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mat-stepper-vertical, .mat-stepper-horizontal {
+    border-radius: 10px;
+  }
+
+  .full-field {
+    display: flex; 
+    flex-direction: column
+  }
+
+  .section-description {
+    margin: 1em 0 1em 0;
+  }
+  
+  mat-radio-group {
+    mat-radio-button:first-child {
+      margin-right: 1em;
+    }
+  }
+}
+
