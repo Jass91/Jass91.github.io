@@ -91,15 +91,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppModule {
   constructor(matIconRegistry, domSanitizer) {
-    const svgs = {
-      logo: 'assets/icons/logo.svg',
-      steam: 'assets/icons/steam.svg',
-      google: 'assets/icons/google.svg',
-      metamask: 'assets/icons/metamask.svg'
-    };
-    for (const key in svgs) {
-      matIconRegistry.addSvgIcon(key, domSanitizer.bypassSecurityTrustResourceUrl(svgs[key]));
-    }
+    matIconRegistry.addSvgIcon('metamask', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/metamask.svg'));
+    matIconRegistry.addSvgIcon('logo', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/logo.svg'));
   }
   static {
     this.ɵfac = function AppModule_Factory(__ngFactoryType__) {
@@ -150,16 +143,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppRoutingModule: () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 5072);
 /* harmony import */ var _features_auth_pages_login_login_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./features/auth/pages/login/login.component */ 3090);
 /* harmony import */ var _features_new_game_pages_new_game_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./features/new-game/pages/new-game.component */ 9135);
 /* harmony import */ var _features_auth_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./features/auth/pages/signup/signup.component */ 6576);
 /* harmony import */ var _features_landing_page_pages_landing_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./features/landing-page/pages/landing-page.component */ 4015);
 /* harmony import */ var _core_components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./core/components/logged-in-layout/logged-in-structure/structure.component */ 2856);
 /* harmony import */ var _core_components_logged_out_layout_logged_out_structure_structure_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./core/components/logged-out-layout/logged-out-structure/structure.component */ 5736);
-/* harmony import */ var _features_provider_account_pages_provider_account_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./features/provider-account/pages/provider-account.component */ 2599);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 7580);
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 7580);
 
 
 
@@ -190,13 +181,8 @@ const loggedInRoutes = [{
   component: _core_components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__.LoggedInStructureComponent,
   children: [{
     path: 'new-game',
-    // TODO: seria melhor game/new?
     component: _features_new_game_pages_new_game_component__WEBPACK_IMPORTED_MODULE_1__.NewGameComponent,
     loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ./features/new-game/new-game.module */ 7317)).then(m => m.NewGameModule)
-  }, {
-    path: 'accounts',
-    component: _features_provider_account_pages_provider_account_component__WEBPACK_IMPORTED_MODULE_6__.ProviderAccountComponent,
-    loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_features_provider-account_provider-account_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./features/provider-account/provider-account.module */ 4289)).then(m => m.ProviderAccountModule)
   }]
 }];
 const routes = [
@@ -216,20 +202,20 @@ class AppRoutingModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({
       type: AppRoutingModule
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule]
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](AppRoutingModule, {
-    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule],
-    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
   });
 })();
 
@@ -711,14 +697,14 @@ class AuthService {
   getLoginMessage() {
     var _this = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const httpRequest = _this._http.get(`${_this._config.backendBaseUrl}/api/Auth/login`);
+      const httpRequest = _this._http.get(`${_this._config.cSharpBaseApiUrl}/api/Auth/login`);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(httpRequest);
     })();
   }
   getSignupMessage() {
     var _this2 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const httpRequest = _this2._http.get(`${_this2._config.backendBaseUrl}/api/Auth/signup`);
+      const httpRequest = _this2._http.get(`${_this2._config.cSharpBaseApiUrl}/api/Auth/signup`);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(httpRequest);
     })();
   }
@@ -734,7 +720,7 @@ class AuthService {
           signature
         } = auth;
         // 4. Enviar a assinatura ao backend para validação
-        const postRequest = _this3._http.post(`${_this3._config.backendBaseUrl}/api/Auth/signup/${suffix}`, {
+        const postRequest = _this3._http.post(`${_this3._config.cSharpBaseApiUrl}/api/Auth/signup/${suffix}`, {
           nonce,
           message,
           timestamp,
@@ -767,7 +753,7 @@ class AuthService {
           signature
         } = auth;
         // 4. Enviar a assinatura ao backend para validação
-        const postRequest = _this4._http.post(`${_this4._config.backendBaseUrl}/api/Auth/login`, {
+        const postRequest = _this4._http.post(`${_this4._config.cSharpBaseApiUrl}/api/Auth/login`, {
           nonce,
           message,
           userType,
@@ -828,8 +814,8 @@ class ConfigService {
   get nodeBaseApiUrl() {
     return this._config.nodeBaseApiUrl;
   }
-  get backendBaseUrl() {
-    return this._config.backendBaseUrl;
+  get cSharpBaseApiUrl() {
+    return this._config.cSharpBaseApiUrl;
   }
   constructor() {
     this._config = {
@@ -2844,7 +2830,7 @@ class GameService {
   create(newGame) {
     var _this = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const response = _this._http.post(`${_this._config.backendBaseUrl}/api/game`, newGame);
+      const response = _this._http.post(`${_this._config.cSharpBaseApiUrl}/api/game`, newGame);
       return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(response);
     })();
   }
@@ -2852,7 +2838,7 @@ class GameService {
   getFakeGame() {
     var _this2 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const response = _this2._http.get(`${_this2._config.backendBaseUrl}/api/test/game/new`);
+      const response = _this2._http.get(`${_this2._config.cSharpBaseApiUrl}/api/test/game/new`);
       return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(response);
     })();
   }
@@ -2995,98 +2981,6 @@ class TokenFactoryService {
     this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjectable"]({
       token: TokenFactoryService,
       factory: TokenFactoryService.ɵfac
-    });
-  }
-}
-
-/***/ }),
-
-/***/ 2599:
-/*!*******************************************************************************!*\
-  !*** ./src/app/features/provider-account/pages/provider-account.component.ts ***!
-  \*******************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ProviderAccountComponent: () => (/* binding */ ProviderAccountComponent)
-/* harmony export */ });
-/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
-/* harmony import */ var src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/core/services/config/config.service */ 7629);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 6443);
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/icon */ 3840);
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/button */ 4175);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ 4456);
-
-
-
-
-
-
-
-class ProviderAccountComponent {
-  constructor(_config, _httpClient) {
-    this._config = _config;
-    this._httpClient = _httpClient;
-  }
-  steamLogin() {
-    var _this = this;
-    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      debugger;
-      const url = `${_this._config.backendBaseUrl}/api/auth/steam`;
-      window.open(url, '_blank', 'width=600,height=700');
-      // const response = this._httpClient.get<any>(
-      //   `${this._config.backendBaseUrl}/api/steam/auth`
-      // );
-      // return await firstValueFrom(response);
-    })();
-  }
-  googleLogin() {
-    var _this2 = this;
-    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      debugger;
-      const url = `${_this2._config.backendBaseUrl}/api/auth/google`;
-      window.open(url, '_blank', 'width=600,height=700');
-      // const response = this._httpClient.get<any>(
-      //   `${this._config.backendBaseUrl}/api/steam/auth`
-      // );
-      // return await firstValueFrom(response);
-    })();
-  }
-  static {
-    this.ɵfac = function ProviderAccountComponent_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || ProviderAccountComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__["default"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpClient));
-    };
-  }
-  static {
-    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
-      type: ProviderAccountComponent,
-      selectors: [["app-provider-account"]],
-      decls: 9,
-      vars: 0,
-      consts: [[1, "page"], [1, "form-container"], ["mat-icon-button", "", 3, "click"], ["svgIcon", "google"], ["svgIcon", "steam"]],
-      template: function ProviderAccountComponent_Template(rf, ctx) {
-        if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "h3");
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, "Account Binding");
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 1)(4, "form")(5, "button", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ProviderAccountComponent_Template_button_click_5_listener() {
-            return ctx.steamLogin();
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](6, "mat-icon", 3);
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "button", 2);
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ProviderAccountComponent_Template_button_click_7_listener() {
-            return ctx.steamLogin();
-          });
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](8, "mat-icon", 4);
-          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
-        }
-      },
-      dependencies: [_angular_material_icon__WEBPACK_IMPORTED_MODULE_4__.MatIcon, _angular_material_button__WEBPACK_IMPORTED_MODULE_5__.MatIconButton, _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatusGroup],
-      styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
 }
@@ -3572,7 +3466,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const environment = {
   nodeBaseApiUrl: 'http://localhost:9000',
-  backendBaseUrl: 'http://localhost:3000'
+  cSharpBaseApiUrl: 'http://localhost:3000'
 };
 
 /***/ }),
