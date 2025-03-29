@@ -21,11 +21,12 @@ class AppComponent {
     this.title = 'Thornament';
   }
   ngOnInit() {
-    // if (!this.checkWeb3Provider()) {
-    //   this._router.navigate(['/no-web3-provider']);
-    // }
+    // TODO: permitir que a landing page ao menos mostre sem metamask
+    if (!this.isWeb3ProviderAvailable()) {
+      //this._router.navigate(['/no-web3-provider']);
+    }
   }
-  checkWeb3Provider() {
+  isWeb3ProviderAvailable() {
     return !!window.ethereum;
   }
   static {
@@ -91,8 +92,17 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppModule {
   constructor(matIconRegistry, domSanitizer) {
-    matIconRegistry.addSvgIcon('metamask', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/metamask.svg'));
-    matIconRegistry.addSvgIcon('logo', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/logo.svg'));
+    const svgs = {
+      psn: 'assets/icons/psn.svg',
+      logo: 'assets/icons/logo.svg',
+      xbox: 'assets/icons/xbox.svg',
+      steam: 'assets/icons/steam.svg',
+      google: 'assets/icons/google.svg',
+      metamask: 'assets/icons/metamask.svg'
+    };
+    for (const key in svgs) {
+      matIconRegistry.addSvgIcon(key, domSanitizer.bypassSecurityTrustResourceUrl(svgs[key]));
+    }
   }
   static {
     this.ɵfac = function AppModule_Factory(__ngFactoryType__) {
@@ -143,14 +153,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppRoutingModule: () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ 5072);
 /* harmony import */ var _features_auth_pages_login_login_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./features/auth/pages/login/login.component */ 3090);
 /* harmony import */ var _features_new_game_pages_new_game_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./features/new-game/pages/new-game.component */ 9135);
 /* harmony import */ var _features_auth_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./features/auth/pages/signup/signup.component */ 6576);
 /* harmony import */ var _features_landing_page_pages_landing_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./features/landing-page/pages/landing-page.component */ 4015);
 /* harmony import */ var _core_components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./core/components/logged-in-layout/logged-in-structure/structure.component */ 2856);
 /* harmony import */ var _core_components_logged_out_layout_logged_out_structure_structure_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./core/components/logged-out-layout/logged-out-structure/structure.component */ 5736);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _features_provider_account_pages_provider_account_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./features/provider-account/pages/provider-account.component */ 2599);
+/* harmony import */ var _features_no_web3_provider_no_web3_provider_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./features/no-web3-provider/no-web3-provider.component */ 7594);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 7580);
+
+
 
 
 
@@ -166,14 +180,15 @@ const loggedOutRoutes = [{
   children: [{
     path: '',
     component: _features_landing_page_pages_landing_page_component__WEBPACK_IMPORTED_MODULE_3__.LandingPageComponent
-  },
-  // Página inicial da área não autenticada
-  {
+  }, {
     path: 'signup',
     component: _features_auth_pages_signup_signup_component__WEBPACK_IMPORTED_MODULE_2__.SignupPageComponent
   }, {
     path: 'login',
     component: _features_auth_pages_login_login_component__WEBPACK_IMPORTED_MODULE_0__.LoginPageComponent
+  }, {
+    path: 'no-web3-provider',
+    component: _features_no_web3_provider_no_web3_provider_component__WEBPACK_IMPORTED_MODULE_7__.NoWeb3ProviderComponent
   }]
 }];
 const loggedInRoutes = [{
@@ -181,8 +196,13 @@ const loggedInRoutes = [{
   component: _core_components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__.LoggedInStructureComponent,
   children: [{
     path: 'new-game',
+    // TODO: seria melhor game/new?
     component: _features_new_game_pages_new_game_component__WEBPACK_IMPORTED_MODULE_1__.NewGameComponent,
     loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ./features/new-game/new-game.module */ 7317)).then(m => m.NewGameModule)
+  }, {
+    path: 'accounts',
+    component: _features_provider_account_pages_provider_account_component__WEBPACK_IMPORTED_MODULE_6__.ProviderAccountComponent,
+    loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_features_provider-account_provider-account_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./features/provider-account/provider-account.module */ 4289)).then(m => m.ProviderAccountModule)
   }]
 }];
 const routes = [
@@ -202,20 +222,20 @@ class AppRoutingModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({
       type: AppRoutingModule
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_9__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_9__.RouterModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AppRoutingModule, {
-    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule],
-    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_9__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_9__.RouterModule]
   });
 })();
 
@@ -323,7 +343,7 @@ class LoggedInStructureComponent {
         }
       },
       dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_3__.RouterOutlet, _logged_in_header_header_component__WEBPACK_IMPORTED_MODULE_0__.LoggedInHeaderComponent, _logged_out_layout_logged_out_footer_logged_out_footer_component__WEBPACK_IMPORTED_MODULE_1__.LoggedOutFooterComponent],
-      styles: ["[_nghost-%COMP%] {\n  display: flex;\n  height: 100%;\n  flex-direction: column;\n}\n\n.app-logged-in-content-container[_ngcontent-%COMP%] {\n  flex: 1;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29yZS9jb21wb25lbnRzL2xvZ2dlZC1pbi1sYXlvdXQvbG9nZ2VkLWluLXN0cnVjdHVyZS9zdHJ1Y3R1cmUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EsWUFBQTtFQUNBLHNCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxufVxyXG5cclxuLmFwcC1sb2dnZWQtaW4tY29udGVudC1jb250YWluZXIge1xyXG4gIGZsZXg6IDE7XHJcbn1cclxuXHJcbi5hcHAtbG9nZ2VkLWluLWhlYWRlci1jb250YWluZXIge1xyXG5cclxufVxyXG5cclxuLmFwcC1sb2dnZWQtaW4tZm9vdGVyLWNvbnRhaW5lciB7XHJcblxyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+      styles: ["[_nghost-%COMP%] {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n.app-logged-in-content-container[_ngcontent-%COMP%] {\n  flex: 1;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29yZS9jb21wb25lbnRzL2xvZ2dlZC1pbi1sYXlvdXQvbG9nZ2VkLWluLXN0cnVjdHVyZS9zdHJ1Y3R1cmUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0FBQ0Y7O0FBRUE7RUFDRSxPQUFBO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxufVxyXG5cclxuLmFwcC1sb2dnZWQtaW4tY29udGVudC1jb250YWluZXIge1xyXG4gIGZsZXg6IDE7XHJcbn1cclxuXHJcbi5hcHAtbG9nZ2VkLWluLWhlYWRlci1jb250YWluZXIge1xyXG5cclxufVxyXG5cclxuLmFwcC1sb2dnZWQtaW4tZm9vdGVyLWNvbnRhaW5lciB7XHJcblxyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
     });
   }
 }
@@ -541,18 +561,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/logged-in-layout/logged-in-structure/structure.component */ 2856);
 /* harmony import */ var _components_logged_out_layout_logged_out_structure_structure_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/logged-out-layout/logged-out-structure/structure.component */ 5736);
 /* harmony import */ var _services_web3_web3_provider_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/web3/web3-provider.service */ 5763);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ 6443);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 5072);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common */ 316);
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/icon */ 3840);
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/button */ 4175);
-/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/toolbar */ 9552);
-/* harmony import */ var _initializers_app_initializer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../initializers/app.initializer */ 8339);
-/* harmony import */ var _interceptors_logging_interceptor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./interceptors/logging.interceptor */ 2185);
-/* harmony import */ var _interceptors_auth_interceptor__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./interceptors/auth.interceptor */ 3622);
-/* harmony import */ var _components_logged_out_layout_logged_out_footer_logged_out_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/logged-out-layout/logged-out-footer/logged-out-footer.component */ 1172);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 7580);
-
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ 6443);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/icon */ 3840);
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/button */ 4175);
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/toolbar */ 9552);
+/* harmony import */ var _interceptors_logging_interceptor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./interceptors/logging.interceptor */ 2185);
+/* harmony import */ var _interceptors_auth_interceptor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./interceptors/auth.interceptor */ 3622);
+/* harmony import */ var _components_logged_out_layout_logged_out_footer_logged_out_footer_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/logged-out-layout/logged-out-footer/logged-out-footer.component */ 1172);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 7580);
 
 
 
@@ -596,22 +614,22 @@ class AppCoreModule {
     };
   }
   static {
-    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({
+    this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({
       type: AppCoreModule
     });
   }
   static {
-    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({
-      providers: [_services_auth_auth_service__WEBPACK_IMPORTED_MODULE_1__.AuthService, _services_config_config_service__WEBPACK_IMPORTED_MODULE_0__["default"], _initializers_app_initializer__WEBPACK_IMPORTED_MODULE_7__.appInitializer, _services_web3_web3_provider_service__WEBPACK_IMPORTED_MODULE_6__.Web3ProviderService, (0,_angular_common_http__WEBPACK_IMPORTED_MODULE_12__.provideHttpClient)((0,_angular_common_http__WEBPACK_IMPORTED_MODULE_12__.withInterceptors)([_interceptors_logging_interceptor__WEBPACK_IMPORTED_MODULE_8__.loggingInterceptor, _interceptors_auth_interceptor__WEBPACK_IMPORTED_MODULE_9__.authInterceptor]))],
-      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_13__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__.MatIconModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_16__.MatButtonModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_17__.MatToolbarModule]
+    this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({
+      providers: [_services_auth_auth_service__WEBPACK_IMPORTED_MODULE_1__.AuthService, _services_config_config_service__WEBPACK_IMPORTED_MODULE_0__["default"], _services_web3_web3_provider_service__WEBPACK_IMPORTED_MODULE_6__.Web3ProviderService, (0,_angular_common_http__WEBPACK_IMPORTED_MODULE_11__.provideHttpClient)((0,_angular_common_http__WEBPACK_IMPORTED_MODULE_11__.withInterceptors)([_interceptors_logging_interceptor__WEBPACK_IMPORTED_MODULE_7__.loggingInterceptor, _interceptors_auth_interceptor__WEBPACK_IMPORTED_MODULE_8__.authInterceptor]))],
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_12__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_13__.RouterModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_14__.MatIconModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_15__.MatButtonModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_16__.MatToolbarModule]
     });
   }
 }
 (function () {
-  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵsetNgModuleScope"](AppCoreModule, {
-    declarations: [_components_logged_in_layout_logged_in_header_header_component__WEBPACK_IMPORTED_MODULE_2__.LoggedInHeaderComponent, _components_logged_out_layout_logged_out_footer_logged_out_footer_component__WEBPACK_IMPORTED_MODULE_10__.LoggedOutFooterComponent, _components_logged_out_layout_logged_out_header_header_component__WEBPACK_IMPORTED_MODULE_3__.LoggedOutHeaderComponent, _components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__.LoggedInStructureComponent, _components_logged_out_layout_logged_out_structure_structure_component__WEBPACK_IMPORTED_MODULE_5__.LoggedOutStructureComponent],
-    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_13__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__.MatIconModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_16__.MatButtonModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_17__.MatToolbarModule],
-    exports: [_components_logged_in_layout_logged_in_header_header_component__WEBPACK_IMPORTED_MODULE_2__.LoggedInHeaderComponent, _components_logged_out_layout_logged_out_footer_logged_out_footer_component__WEBPACK_IMPORTED_MODULE_10__.LoggedOutFooterComponent, _components_logged_out_layout_logged_out_header_header_component__WEBPACK_IMPORTED_MODULE_3__.LoggedOutHeaderComponent, _components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__.LoggedInStructureComponent, _components_logged_out_layout_logged_out_structure_structure_component__WEBPACK_IMPORTED_MODULE_5__.LoggedOutStructureComponent]
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](AppCoreModule, {
+    declarations: [_components_logged_in_layout_logged_in_header_header_component__WEBPACK_IMPORTED_MODULE_2__.LoggedInHeaderComponent, _components_logged_out_layout_logged_out_footer_logged_out_footer_component__WEBPACK_IMPORTED_MODULE_9__.LoggedOutFooterComponent, _components_logged_out_layout_logged_out_header_header_component__WEBPACK_IMPORTED_MODULE_3__.LoggedOutHeaderComponent, _components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__.LoggedInStructureComponent, _components_logged_out_layout_logged_out_structure_structure_component__WEBPACK_IMPORTED_MODULE_5__.LoggedOutStructureComponent],
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_12__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_13__.RouterModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_14__.MatIconModule, _angular_material_button__WEBPACK_IMPORTED_MODULE_15__.MatButtonModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_16__.MatToolbarModule],
+    exports: [_components_logged_in_layout_logged_in_header_header_component__WEBPACK_IMPORTED_MODULE_2__.LoggedInHeaderComponent, _components_logged_out_layout_logged_out_footer_logged_out_footer_component__WEBPACK_IMPORTED_MODULE_9__.LoggedOutFooterComponent, _components_logged_out_layout_logged_out_header_header_component__WEBPACK_IMPORTED_MODULE_3__.LoggedOutHeaderComponent, _components_logged_in_layout_logged_in_structure_structure_component__WEBPACK_IMPORTED_MODULE_4__.LoggedInStructureComponent, _components_logged_out_layout_logged_out_structure_structure_component__WEBPACK_IMPORTED_MODULE_5__.LoggedOutStructureComponent]
   });
 })();
 
@@ -697,14 +715,14 @@ class AuthService {
   getLoginMessage() {
     var _this = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const httpRequest = _this._http.get(`${_this._config.cSharpBaseApiUrl}/api/Auth/login`);
+      const httpRequest = _this._http.get(`${_this._config.backendBaseUrl}/api/Auth/login`);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(httpRequest);
     })();
   }
   getSignupMessage() {
     var _this2 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const httpRequest = _this2._http.get(`${_this2._config.cSharpBaseApiUrl}/api/Auth/signup`);
+      const httpRequest = _this2._http.get(`${_this2._config.backendBaseUrl}/api/Auth/signup`);
       return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(httpRequest);
     })();
   }
@@ -720,7 +738,7 @@ class AuthService {
           signature
         } = auth;
         // 4. Enviar a assinatura ao backend para validação
-        const postRequest = _this3._http.post(`${_this3._config.cSharpBaseApiUrl}/api/Auth/signup/${suffix}`, {
+        const postRequest = _this3._http.post(`${_this3._config.backendBaseUrl}/api/Auth/signup/${suffix}`, {
           nonce,
           message,
           timestamp,
@@ -753,7 +771,7 @@ class AuthService {
           signature
         } = auth;
         // 4. Enviar a assinatura ao backend para validação
-        const postRequest = _this4._http.post(`${_this4._config.cSharpBaseApiUrl}/api/Auth/login`, {
+        const postRequest = _this4._http.post(`${_this4._config.backendBaseUrl}/api/Auth/login`, {
           nonce,
           message,
           userType,
@@ -814,8 +832,8 @@ class ConfigService {
   get nodeBaseApiUrl() {
     return this._config.nodeBaseApiUrl;
   }
-  get cSharpBaseApiUrl() {
-    return this._config.cSharpBaseApiUrl;
+  get backendBaseUrl() {
+    return this._config.backendBaseUrl;
   }
   constructor() {
     this._config = {
@@ -824,21 +842,23 @@ class ConfigService {
     };
   }
   load(http) {
-    var _this = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      try {
-        _this._config.gameTokenFactoryConfig = yield _this.loadTokenfactoryContractData(http);
-      } catch (e) {
-        console.error(e);
-        throw e;
-      }
+      // TODO: implementar o load das configs async se necessário
+      return Promise.resolve();
+      // try {
+      //   this._config.gameTokenFactoryConfig =
+      //     await this.loadTokenfactoryContractData(http);
+      // } catch (e) {
+      //   console.error(e);
+      //   throw e;
+      // }
     })();
   }
   loadTokenfactoryContractData(http) {
-    var _this2 = this;
+    var _this = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       return new Promise((resolve, reject) => {
-        http.get(`${_this2._config.nodeBaseApiUrl}/contract/GameTokenFactory/metadata`).subscribe({
+        http.get(`${_this._config.nodeBaseApiUrl}/contract/GameTokenFactory/metadata`).subscribe({
           next: data => resolve({
             abi: data.abi,
             address: data.contractAddress
@@ -879,48 +899,74 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ethers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ethers */ 1889);
 /* harmony import */ var ethers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ethers */ 5995);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ 5072);
+
 
 
 
 
 // o primeiro argumento do send, pode ser consultado aqui
 // EIP-1193: https://eips.ethereum.org/EIPS/eip-1193
-class Web3ProviderService extends ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserProvider {
-  constructor() {
-    super(window.ethereum);
+class Web3ProviderService {
+  constructor(router) {
+    this.router = router;
+    this._provider = null;
     this._accounts = [];
-    // Ouve mudanças de conta (mas nao ta evemitindo nao)
-    // this._provider.provider.on('accountsChanged', (accounts) => {
-    //   debugger;
-    //   // emitir algum evento
-    //   //console.log('Conta conectada:', accounts[0]);
-    // });
+    this._isAvailable = false;
+    this._isAvailable = window.ethereum !== undefined;
+    if (this._isAvailable) {
+      this._provider = new ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserProvider(window.ethereum);
+      // Ouvir mudanças de conta (TODO: tipar)
+      window.ethereum.on('accountsChanged', accounts => {
+        debugger;
+        this._accounts.length = 0;
+        this._accounts.push(...accounts);
+        // Emitir evento se necessário
+      });
+    }
   }
-  // https://docs.metamask.io/wallet/reference/provider-api/
-  // https://stackoverflow.com/questions/70663898/my-dapp-doesnt-detect-when-an-user-change-their-metamask-account
+  get available() {
+    return this._isAvailable;
+  }
   get connected() {
     return this._accounts.length > 0;
+  }
+  getSigner() {
+    return this._provider.getSigner();
+  }
+  send(command, args) {
+    return this._provider.send(command, args);
   }
   chainId() {
     var _this = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const chainId = (yield _this.getNetwork()).chainId;
+      if (!_this._isAvailable || !_this._provider) {
+        _this.handleNoProvider();
+        return Promise.reject(new Error('Web3 provider not available'));
+      }
+      const chainId = (yield _this._provider.getNetwork()).chainId;
       return Promise.resolve(Number(chainId));
     })();
   }
   currentAccount() {
     var _this2 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      return _this2.getSigner();
+      if (!_this2._isAvailable || !_this2._provider) {
+        _this2.handleNoProvider();
+        return Promise.reject(new Error('Web3 provider not available'));
+      }
+      return _this2._provider.getSigner();
     })();
   }
   connect() {
     var _this3 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      if (!window.ethereum) {
-        return Promise.reject(new Error('Please install MetaMask or another wallet extension.'));
+      if (!_this3._isAvailable || !_this3._provider) {
+        _this3.handleNoProvider();
+        return Promise.reject(new Error('Web3 provider not available'));
       }
-      return _this3.send('eth_requestAccounts', []).then(accounts => {
+      return _this3._provider.send('eth_requestAccounts', []).then(accounts => {
+        _this3._accounts.length = 0;
         _this3._accounts.push(...(accounts || []));
         return accounts;
       }).catch(err => {
@@ -929,24 +975,16 @@ class Web3ProviderService extends ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserPro
       });
     })();
   }
-  /*
-  async requestPermissions() {
-    try {
-      return await (window as any).ethereum.request({
-        method: 'wallet_requestPermissions',
-        params: [{ eth_accounts: {} }],
-      });
-    } catch (error) {
-      console.error('Erro ao solicitar permissões:', error);
-    }
-  }
-  */
   signTypedData_v4(eip721Data) {
     var _this4 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      if (!_this4._isAvailable || !_this4._provider) {
+        _this4.handleNoProvider();
+        return Promise.reject(new Error('Web3 provider not available'));
+      }
       try {
-        const signer = yield _this4.getSigner();
-        const signature = yield _this4.send('eth_signTypedData_v4', [signer.address, eip721Data]);
+        const signer = yield _this4._provider.getSigner();
+        const signature = yield _this4._provider.send('eth_signTypedData_v4', [signer.address, eip721Data]);
         return signature;
       } catch (e) {
         console.error(e);
@@ -957,11 +995,15 @@ class Web3ProviderService extends ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserPro
   signPersonal(message) {
     var _this5 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      if (!_this5._isAvailable || !_this5._provider) {
+        _this5.handleNoProvider();
+        return Promise.reject(new Error('Web3 provider not available'));
+      }
       try {
-        const signer = yield _this5.getSigner();
+        const signer = yield _this5._provider.getSigner();
         // Converte a string em bytes e depois para hexadecimal
         const hexMessage = ethers__WEBPACK_IMPORTED_MODULE_2__.hexlify(ethers__WEBPACK_IMPORTED_MODULE_3__.toUtf8Bytes(message));
-        const signature = yield _this5.send('personal_sign', [hexMessage, signer.address]);
+        const signature = yield _this5._provider.send('personal_sign', [hexMessage, signer.address]);
         return signature;
       } catch (e) {
         console.error(e);
@@ -969,9 +1011,13 @@ class Web3ProviderService extends ethers__WEBPACK_IMPORTED_MODULE_1__.BrowserPro
       }
     })();
   }
+  handleNoProvider() {
+    // Navega para a página de erro ou mostra uma mensagem
+    this.router.navigate(['/no-web3-provider']);
+  }
   static {
     this.ɵfac = function Web3ProviderService_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || Web3ProviderService)();
+      return new (__ngFactoryType__ || Web3ProviderService)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_5__.Router));
     };
   }
   static {
@@ -2811,44 +2857,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
 /* harmony import */ var src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/core/services/config/config.service */ 7629);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 6196);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ 6443);
-/* harmony import */ var src_app_core_services_web3_web3_provider_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/core/services/web3/web3-provider.service */ 5763);
-
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 6196);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ 6443);
 
 
 
 
 
 class GameService {
-  constructor(_http, _config, web3ProviderService) {
+  constructor(_http, _config) {
     this._http = _http;
     this._config = _config;
-    this.provider = web3ProviderService.provider;
   }
   create(newGame) {
     var _this = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const response = _this._http.post(`${_this._config.cSharpBaseApiUrl}/api/game`, newGame);
-      return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(response);
+      const response = _this._http.post(`${_this._config.backendBaseUrl}/api/game`, newGame);
+      return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.firstValueFrom)(response);
     })();
   }
   // TODO: remover após testes
   getFakeGame() {
     var _this2 = this;
     return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      const response = _this2._http.get(`${_this2._config.cSharpBaseApiUrl}/api/test/game/new`);
-      return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.firstValueFrom)(response);
+      const response = _this2._http.get(`${_this2._config.backendBaseUrl}/api/test/game/new`);
+      return yield (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.firstValueFrom)(response);
     })();
   }
   static {
     this.ɵfac = function GameService_Factory(__ngFactoryType__) {
-      return new (__ngFactoryType__ || GameService)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__["default"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵinject"](src_app_core_services_web3_web3_provider_service__WEBPACK_IMPORTED_MODULE_2__.Web3ProviderService));
+      return new (__ngFactoryType__ || GameService)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_4__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__["default"]));
     };
   }
   static {
-    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjectable"]({
+    this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({
       token: GameService,
       factory: GameService.ɵfac
     });
@@ -2987,6 +3030,247 @@ class TokenFactoryService {
 
 /***/ }),
 
+/***/ 7594:
+/*!*************************************************************************!*\
+  !*** ./src/app/features/no-web3-provider/no-web3-provider.component.ts ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   NoWeb3ProviderComponent: () => (/* binding */ NoWeb3ProviderComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
+
+class NoWeb3ProviderComponent {
+  static {
+    this.ɵfac = function NoWeb3ProviderComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || NoWeb3ProviderComponent)();
+    };
+  }
+  static {
+    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: NoWeb3ProviderComponent,
+      selectors: [["app-no-web3-provider"]],
+      decls: 2,
+      vars: 0,
+      template: function NoWeb3ProviderComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Please install some browser wallet like metamask or other Ethereum compatible wallet\n");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 2599:
+/*!*******************************************************************************!*\
+  !*** ./src/app/features/provider-account/pages/provider-account.component.ts ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ProviderAccountComponent: () => (/* binding */ ProviderAccountComponent)
+/* harmony export */ });
+/* harmony import */ var C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 9204);
+/* harmony import */ var src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/core/services/config/config.service */ 7629);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7580);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ 6443);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/icon */ 3840);
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/button */ 4175);
+
+
+
+
+
+
+
+function ProviderAccountComponent_div_27_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div")(1, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const a_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](a_r1.provider);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](a_r1.username);
+  }
+}
+class ProviderAccountComponent {
+  constructor(_config, _httpClient) {
+    this._config = _config;
+    this._httpClient = _httpClient;
+    this.accounts = [];
+  }
+  ngOnInit() {
+    window.addEventListener('message', this.handleAuthResponse.bind(this), false);
+  }
+  ngOnDestroy() {
+    window.removeEventListener('message', this.handleAuthResponse.bind(this));
+  }
+  steamLogin() {
+    var _this = this;
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const windowFeatures = 'width=600,height=700,resizable=yes,scrollbars=yes,status=yes';
+      const url = `${_this._config.backendBaseUrl}/api/auth/steam`;
+      const popup = window.open(url, 'steamWindow', windowFeatures);
+      if (!popup) {
+        // TODO: usar toastr ou algo assim
+        alert('O popup foi bloqueado. Por favor, permita popups para este site.');
+        return;
+      }
+    })();
+  }
+  psnLogin() {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {})();
+  }
+  xboxLogin() {
+    var _this2 = this;
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const windowFeatures = 'width=600,height=700,resizable=yes,scrollbars=yes,status=yes';
+      const url = `${_this2._config.backendBaseUrl}/api/auth/xbox`;
+      const popup = window.open(url, 'steamWindow', windowFeatures);
+      if (!popup) {
+        // TODO: usar toastr ou algo assim
+        alert('O popup foi bloqueado. Por favor, permita popups para este site.');
+        return;
+      }
+    })();
+  }
+  googleLogin() {
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {})();
+  }
+  handleAuthResponse(evt) {
+    var _this3 = this;
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      // console.log(evt);
+      const {
+        success,
+        name,
+        payload,
+        provider
+      } = evt.data;
+      if (name !== '3rd_auth') return;
+      if (!success) {
+        // TODO: mostrar algum alerta (toastr sei la)
+        alert(payload);
+      }
+      switch (provider) {
+        case 'steam':
+          yield _this3.handleSteamAuthResponse(payload);
+          break;
+        default:
+          break;
+      }
+    })();
+  }
+  handleSteamAuthResponse(payload) {
+    var _this4 = this;
+    return (0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+      const {
+        avatar,
+        profileUrl,
+        personaName,
+        steamId
+      } = payload;
+      _this4.accounts.push({
+        avatar,
+        provider: 'steam',
+        profile: profileUrl,
+        providerId: steamId,
+        username: personaName
+      });
+    })();
+  }
+  static {
+    this.ɵfac = function ProviderAccountComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || ProviderAccountComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](src_app_core_services_config_config_service__WEBPACK_IMPORTED_MODULE_1__["default"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_3__.HttpClient));
+    };
+  }
+  static {
+    this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
+      type: ProviderAccountComponent,
+      selectors: [["app-provider-account"]],
+      decls: 28,
+      vars: 1,
+      consts: [[1, "page"], [1, "action-area"], [1, "left"], ["mat-button", "", 3, "click"], ["svgIcon", "steam"], ["mat-button", "", "disabled", "", 3, "click"], ["svgIcon", "psn"], ["svgIcon", "xbox"], ["svgIcon", "google"], [1, "right"], [1, "account-list"], [4, "ngFor", "ngForOf"]],
+      template: function ProviderAccountComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0)(1, "h3");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, "Account Binding");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 1)(4, "div", 2)(5, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](6, "Providers");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "button", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ProviderAccountComponent_Template_button_click_7_listener() {
+            return ctx.steamLogin();
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](8, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](9, "Bind your Steam account");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](10, "mat-icon", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "button", 5);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ProviderAccountComponent_Template_button_click_11_listener() {
+            return ctx.psnLogin();
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](12, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](13, "Bind your PSN account");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](14, "mat-icon", 6);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "button", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ProviderAccountComponent_Template_button_click_15_listener() {
+            return ctx.xboxLogin();
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](16, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](17, "Bind your XBOX");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](18, "mat-icon", 7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](19, "button", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function ProviderAccountComponent_Template_button_click_19_listener() {
+            return ctx.googleLogin();
+          });
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](20, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](21, "Bind your Google account");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](22, "mat-icon", 8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](23, "div", 9)(24, "span");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](25, "Accounts");
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](26, "div", 10);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](27, ProviderAccountComponent_div_27_Template, 5, 2, "div", 11);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
+        }
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](27);
+          _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.accounts);
+        }
+      },
+      dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__.MatIcon, _angular_material_button__WEBPACK_IMPORTED_MODULE_6__.MatButton],
+      styles: [".action-area[_ngcontent-%COMP%] {\n  gap: 1rem;\n  height: 100%;\n  display: flex;\n  position: relative;\n}\n.action-area[_ngcontent-%COMP%]   .left[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n.action-area[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%] {\n  flex: 1;\n  display: flex;\n}\n\n.account-list[_ngcontent-%COMP%] {\n  display: flex;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZmVhdHVyZXMvcHJvdmlkZXItYWNjb3VudC9wYWdlcy9wcm92aWRlci1hY2NvdW50LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksU0FBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7QUFDSjtBQUFJO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0FBRVI7QUFBSTtFQUNJLE9BQUE7RUFDQSxhQUFBO0FBRVI7O0FBRUE7RUFDSSxhQUFBO0FBQ0oiLCJzb3VyY2VzQ29udGVudCI6WyIuYWN0aW9uLWFyZWEge1xyXG4gICAgZ2FwOiAxcmVtO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIC5sZWZ0IHtcclxuICAgICAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICB9XHJcbiAgICAucmlnaHQge1xyXG4gICAgICAgIGZsZXg6IDE7XHJcbiAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgIH1cclxufVxyXG5cclxuLmFjY291bnQtbGlzdCB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+    });
+  }
+}
+
+/***/ }),
+
 /***/ 8339:
 /*!*************************************************!*\
   !*** ./src/app/initializers/app.initializer.ts ***!
@@ -3007,12 +3291,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function initalizeServices(http, configService) {
+function initalizeServices(http, configService, web3Provider) {
   return /*#__PURE__*/(0,C_Projetos_thornament_frontend_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
     try {
-      // TODO: nao esquecer comentado
-      // inicializa config service
-      //await configService.load(http);
+      yield configService.load(http);
       // inicializa algum outro service
     } catch (e) {
       // fazer algo
@@ -3466,7 +3748,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const environment = {
   nodeBaseApiUrl: 'http://localhost:9000',
-  cSharpBaseApiUrl: 'http://localhost:3000'
+  backendBaseUrl: 'http://localhost:3000'
 };
 
 /***/ }),
@@ -3483,11 +3765,20 @@ __webpack_require__.r(__webpack_exports__);
 // icons:
 // https://iconscout.com/icons/metamask
 
-// TODO: sobre organizacao
-// https://medium.com/geekculture/project-structure-in-angular-application-33f31d25dcd6
-//https://medium.com/@marketing_26756/angular-best-practices-tips-for-project-structure-and-organization-490ca7950829
 
-_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__.platformBrowser().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule).catch(err => console.error(err));
+// após transformar tudo em standalone
+// bootstrapApplication(AppComponent, {
+//   providers: [provideRouter([])],
+// }).catch((err) => {
+// TODO: tratar melhor
+// console.error(err);
+// });
+_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__.platformBrowser().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule, {
+  providers: []
+}).catch(err => {
+  // TODO: tratar melhor
+  console.error(err);
+});
 
 /***/ })
 
